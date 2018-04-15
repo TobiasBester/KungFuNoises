@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import './themes/df-theme.scss';
+
+.df-theme{
+    @include angular-material-theme($df-theme);
+}

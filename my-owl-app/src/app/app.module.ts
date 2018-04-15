@@ -1,18 +1,19 @@
+import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
-
+import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterialModule
   ],
-  providers: [],
+  providers: [OVERLAY_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,9 @@
+$df-theme-primary: mat-palette($mat-indigo, 900, 800);
+$df-theme-accent: mat-palette($mat-blue, 500, 900);
+$df-theme-warn: mat-palette($mat-red);
+
+$df-theme: mat-dark-theme(
+    $df-theme-primary,
+    $df-theme-accent,
+    $df-theme-warn
+)

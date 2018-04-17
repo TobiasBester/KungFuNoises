@@ -1,25 +1,15 @@
 <div class="default-theme">
-  <mat-toolbar color="primary">
-    <span>My Overwatch League Primary</span>
-  </mat-toolbar>
-  <mat-toolbar color="accent">
-    <span>My Overwatch League Accent</span>
-  </mat-toolbar>
 
-  <mat-card color="primary">
-    <h2>Primary Card</h2>
-    <button mat-button color="accent">Accent button</button>
-    <button mat-raised-button color="accent">Raised Accent button</button>
-  </mat-card>
-  <mat-card color="accent">
-    <h2>Accent Card</h2>
-    <button mat-button color="warn">Warn button</button>
-    <button mat-raised-button color="warn">Warn Accent button</button>
-  </mat-card>
-  <mat-card color="warn">
-    <h2>Warn Card</h2>
-    <button mat-button color="primary">Primary Button</button>
-    <button mat-raised-button color="primary">Raised Primary button</button>
-  </mat-card>
+  <div class="navbars">
+    <mat-toolbar color="primary">
+      <span>My Overwatch League Primary</span>
+    </mat-toolbar>
+    <mat-toolbar color="accent">
+      <span>My Overwatch League Accent</span>
+    </mat-toolbar>
+  </div>
+
+  <br>
+  <router-outlet></router-outlet>
 
 </div>

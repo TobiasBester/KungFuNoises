@@ -4,14 +4,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+import { LandingComponent } from './landing/landing.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [OVERLAY_PROVIDERS],
   bootstrap: [AppComponent]

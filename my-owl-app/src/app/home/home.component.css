@@ -1,20 +1,32 @@
+.top-space {
+    height: 100%;
+}
+
 .home-container {
     margin: auto 7%;
     height: max-content;
 }
 
+.dashboard-spacer {
+    flex: 1 1 auto;
+}
+
 .home-dashboard {
-    padding: 8%;
-    width: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
-.go-back {
-    
+.dash-title {
+    margin: auto 1%;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 250%;
 }
 
-.dashboard-title {
-    text-align: center;
+.go-back {
+    width: auto;
+}
+
+.home-content {
+
 }

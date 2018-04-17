@@ -1,8 +1,9 @@
-import { Player } from "../models/player.model";
-import { Role } from "../enums/role.enum";
+import { Player } from '../models/player.model';
+import { Role } from '../enums/role.enum';
 import { TEAMS } from './teams.mock';
 
 // TO-DO: Complete List
+// tslint:disable:max-line-length
 export const PLAYERS: Player[] = [
   { alias: 'Ado', firstName: 'Gihyeon', lastName: 'Chon', homeTown: 'Chungju, KR', team: TEAMS.SHANGHAI_DRAGONS, role: Role.OFFENCE },
   { alias: 'Agilities', firstName: 'Brady', lastName: 'Girardi', homeTown: 'Blairmore, CA', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.OFFENCE },

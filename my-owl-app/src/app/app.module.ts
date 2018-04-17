@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+import { TeamListComponent } from './team-list/team-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,

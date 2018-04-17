@@ -1,2 +1,2 @@
-.vscode/
-/my-owl-app/node_modules/
+/.vscode
+/my-owl-app/node_modules

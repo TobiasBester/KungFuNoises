@@ -1,12 +1,17 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
+@import './themes/default-theme.scss';
 @import './themes/df-theme.scss';
 @import './themes/ho-theme.scss';
 @import './themes/bu-theme.scss';
 @import './themes/pf-theme.scss';
 @import './themes/ny-theme.scss';
 @import './themes/sd-theme.scss';
+
+.default-theme{
+    @include angular-material-theme($default-theme);
+}
 
 .df-theme{
     @include angular-material-theme($df-theme);

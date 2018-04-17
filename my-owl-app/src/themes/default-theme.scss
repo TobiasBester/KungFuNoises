@@ -1,0 +1,9 @@
+$default-theme-primary: mat-palette($mat-orange, 500);
+$default-theme-accent: mat-palette($mat-grey, 800);
+$default-theme-warn: mat-palette($mat-red);
+
+$default-theme: mat-light-theme(
+    $default-theme-primary,
+    $default-theme-accent,
+    $default-theme-warn
+)

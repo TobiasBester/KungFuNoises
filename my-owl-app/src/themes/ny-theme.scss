@@ -1,0 +1,9 @@
+$ny-theme-primary: mat-palette($mat-indigo, 700);
+$ny-theme-accent: mat-palette($mat-red, 500);
+$ny-theme-warn: mat-palette($mat-red);
+
+$ny-theme: mat-dark-theme(
+    $ny-theme-primary,
+    $ny-theme-accent,
+    $ny-theme-warn
+)

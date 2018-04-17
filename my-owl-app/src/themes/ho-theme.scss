@@ -1,0 +1,9 @@
+$ho-theme-primary: mat-palette($mat-grey, 900);
+$ho-theme-accent: mat-palette($mat-green, A700);
+$ho-theme-warn: mat-palette($mat-red);
+
+$ho-theme: mat-dark-theme(
+    $ho-theme-primary,
+    $ho-theme-accent,
+    $ho-theme-warn
+)

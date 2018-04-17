@@ -1,0 +1,9 @@
+$pf-theme-primary: mat-palette($mat-amber, 600);
+$pf-theme-accent: mat-palette($mat-grey, 700);
+$pf-theme-warn: mat-palette($mat-red);
+
+$pf-theme: mat-light-theme(
+    $pf-theme-primary,
+    $pf-theme-accent,
+    $pf-theme-warn
+)

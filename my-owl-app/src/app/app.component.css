@@ -1,4 +1,19 @@
 .navbars{
     width: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 200%;
+}
+
+.site-navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-logo {
+    height: 150%;
 }

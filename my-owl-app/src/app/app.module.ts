@@ -6,13 +6,16 @@ import { AppRoutingModule } from './/app-routing.module';
 import { AppComponent } from './app.component';
 import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
 import { LandingComponent } from './landing/landing.component';
-import { TeamListComponent } from './team-list/team-list.component';
+import { HomeComponent } from './home/home.component';
+// import { TeamListComponent } from './team-list/team-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    TeamListComponent
+    HomeComponent,
+    HomeComponent
+    // TeamListComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,9 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-/*
+
   title = 'My Overwatch League';
-  themeClass: string;
+/*  themeClass: string;
 
   constructor(
     private overlayContainer: OverlayContainer,

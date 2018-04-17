@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="form-group">
+    <label for="team">Team List</label>
+    <select class="form-control" id="team" required>
+      <option *ngFor="let team of teams" [value]="team">{{team.name}}</option>
+    </select>
+  </div>
+</div>

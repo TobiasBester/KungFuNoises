@@ -1,5 +1,5 @@
-
 export class Team {
-    name : String;
-    points : Number;
+    constructor(
+        public name: String,
+        public points: Number) { }
 }

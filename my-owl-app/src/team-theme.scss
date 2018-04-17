@@ -2,7 +2,32 @@
 @include mat-core();
 
 @import './themes/df-theme.scss';
+@import './themes/ho-theme.scss';
+@import './themes/bu-theme.scss';
+@import './themes/pf-theme.scss';
+@import './themes/ny-theme.scss';
+@import './themes/sd-theme.scss';
 
 .df-theme{
     @include angular-material-theme($df-theme);
+}
+
+.ho-theme{
+    @include angular-material-theme($ho-theme);
+}
+
+.bu-theme{
+    @include angular-material-theme($bu-theme);
+}
+
+.pf-theme{
+    @include angular-material-theme($pf-theme);
+}
+
+.ny-theme{
+    @include angular-material-theme($ny-theme);
+}
+
+.sd-theme{
+    @include angular-material-theme($sd-theme);
 }

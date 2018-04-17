@@ -1,0 +1,9 @@
+$sd-theme-primary: mat-palette($mat-red, 700);
+$sd-theme-accent: mat-palette($mat-yellow, A200);
+$sd-theme-warn: mat-palette($mat-red);
+
+$sd-theme: mat-dark-theme(
+    $sd-theme-primary,
+    $sd-theme-accent,
+    $sd-theme-warn
+)

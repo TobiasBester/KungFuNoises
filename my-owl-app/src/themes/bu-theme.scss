@@ -1,0 +1,9 @@
+$bu-theme-primary: mat-palette($mat-blue, 800);
+$bu-theme-accent: mat-palette($mat-yellow, 500);
+$bu-theme-warn: mat-palette($mat-red);
+
+$bu-theme: mat-light-theme(
+    $bu-theme-primary,
+    $bu-theme-accent,
+    $bu-theme-warn
+)

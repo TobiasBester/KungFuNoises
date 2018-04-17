@@ -1,0 +1,45 @@
+.landing-container {
+    margin: auto 7%;
+    height: max-content;
+}
+
+.landing-headings {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%;
+    color: rgb(109, 106, 106);
+}
+
+.login-form {
+    background: #FF9800;
+    padding: 20px;
+}
+
+.login-instr {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 200%;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-button {
+    padding: 10px 5%;
+    font-size: 125%;
+}
+
+.sign-up-button {
+    padding: 10px 5%;
+    font-size: 125%;
+}
+
+.spacer {
+    flex: 0.1 1 auto;
+}

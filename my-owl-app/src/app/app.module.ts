@@ -8,6 +8,7 @@ import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
 import { TeamListComponent } from './team-list/team-list.component';
+import { ThemeSelectComponent } from './theme-select/theme-select.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TeamListComponent } from './team-list/team-list.component';
     LandingComponent,
     HomeComponent,
     HomeComponent,
-    TeamListComponent
+    TeamListComponent,
+    ThemeSelectComponent
   ],
   imports: [
     BrowserModule,

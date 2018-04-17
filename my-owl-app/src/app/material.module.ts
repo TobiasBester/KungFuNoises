@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-<<<<<<< HEAD
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
@@ -39,10 +38,6 @@ import {
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-=======
-import { MatCardModule, MatButtonModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatIconModule} from '@angular/material';
-import { MatMenuModule } from '@angular/material';
->>>>>>> 9c195a0f828e05ef5881356be126f98096119ade
 
 @NgModule({
   imports: [
@@ -85,14 +80,7 @@ import { MatMenuModule } from '@angular/material';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-<<<<<<< HEAD
     MatTooltipModule
-=======
-    MatFormFieldModule,
-    MatInputModule,
-    MatMenuModule,
-    MatIconModule
->>>>>>> 9c195a0f828e05ef5881356be126f98096119ade
   ],
   declarations: []
 })

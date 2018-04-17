@@ -25,11 +25,7 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
     BrowserModule,
     MaterialModule,
     AppRoutingModule,
-<<<<<<< HEAD
     OverlayModule
-=======
-    BrowserAnimationsModule
->>>>>>> 9c195a0f828e05ef5881356be126f98096119ade
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,17 @@
 <div class="home-container">
-  <mat-card class="home-dashboard" color="accent">
-    <div>
-      <button mat-raised-button class="go-back" color="accent">Go Back?</button>
-    </div>
-    <div class="dashboard-title">
-      <h1>Hello there <!--{{ user.name }}--> </h1>
-    </div>
-  </mat-card>
+  <mat-toolbar class="home-dashboard" color="accent">
+    <h1 class="dash-title">Hello there <!--{{ user.name }}--> </h1>
+    <div class="dashboard-spacer"></div>
+    <button mat-button class="settings-button" [matMenuTriggerFor]="appMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>User Name</button>
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item routerLink="/landing">Log Out</button>
+  </mat-menu>
+
   <mat-card class="home-content" color="primary"></mat-card>
 </div>

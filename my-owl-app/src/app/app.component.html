@@ -11,6 +11,10 @@
   <router-outlet></router-outlet>
 </div>
 
-<div>
+<!-- <div>
   <app-team-list></app-team-list>
+</div> -->
+
+<div>
+  <app-theme-select (chosenTheme)="chosenTheme($event)"></app-theme-select>
 </div>

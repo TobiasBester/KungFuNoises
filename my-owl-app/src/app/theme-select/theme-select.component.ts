@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
+import { TEAMS_LIST } from '../shared/mock_data/teams.mock';
 
 @Component({
   selector: 'app-theme-select',
@@ -6,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./theme-select.component.css']
 })
 export class ThemeSelectComponent implements OnInit {
+  teams = TEAMS_LIST;
+  selected = 'default-theme';
+  @Output() chosenTheme = new EventEmitter<any>();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+  }
+
+  toggle() {
+    this.chosenTheme.emit(this.selected);
   }
 
 }

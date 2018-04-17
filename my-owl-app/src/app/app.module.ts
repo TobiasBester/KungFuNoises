@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './/app-routing.module';
 
 import { AppComponent } from './app.component';
-import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+import { OverlayModule } from '@angular/cdk/overlay';
+
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
 import { TeamListComponent } from './team-list/team-list.component';
@@ -22,9 +23,10 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OverlayModule
   ],
-  providers: [OVERLAY_PROVIDERS],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

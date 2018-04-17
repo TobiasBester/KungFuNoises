@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -10,6 +10,8 @@ import { Store } from '@ngrx/store';
 export class AppComponent implements OnInit {
 
   title = 'My Overwatch League';
+  @HostBinding('class') componentCssClass;
+  constructor(public overlayContainer: OverlayContainer) {}
 /*  themeClass: string;
 
   constructor(
@@ -27,5 +29,14 @@ export class AppComponent implements OnInit {
         overlayContainerClasses.remove(...themeClassesToRemove);
         overlayContainerClasses.add('df-theme');
       });*/
+  }
+
+  onSetTheme(theme) {
+    this.overlayContainer.getContainerElement().classList.add(theme);
+    this.componentCssClass = theme;
+  }
+
+  chosenTheme(theme) {
+    this.onSetTheme(theme);
   }
 }

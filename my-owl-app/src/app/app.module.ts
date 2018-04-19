@@ -1,3 +1,4 @@
+import { UserHeroDialogComponent } from './dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,7 +20,8 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
     HomeComponent,
     HomeComponent,
     TeamListComponent,
-    ThemeSelectComponent
+    ThemeSelectComponent,
+    UserHeroDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
     OverlayModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [UserHeroDialogComponent]
 })
 export class AppModule { }

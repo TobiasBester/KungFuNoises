@@ -16,31 +16,70 @@
   <mat-card class="home-content" color="primary">
     <!-- My Team, My Feed, My news, My Overwatch, My Clips -->
     <div class="cards-container">
-      <div class="my-ow-container">
-        <mat-card>
 
+      <div class="my-ow-container">
+        <!-- SIMPLE -->
+        <mat-card class="my-ow-card" color="primary" *ngIf="!ow_detailed">
+            <mat-card-title class="my-ow-title">R2D2Soon</mat-card-title>
+            <mat-card-subtitle>Blizzard Account: R2D2Soon#1586</mat-card-subtitle>
+          <mat-card-content >
+            <img src="../../assets/images/heroes/Lucio_portrait.png" class="profile-img">
+            <div class="played-heroes">
+              <ul><b>Most played heroes</b>
+                <li>Lucio</li>
+                <li>Pharah</li>
+                <li>Winston</li>
+              </ul>
+            </div>
+            <br>
+            <button mat-raised-button color="accent" (click)="ow_detailed=true">More Detail</button>
+          </mat-card-content>
+        </mat-card>
+        <!-- ow_detailed -->
+        <mat-card class="my-ow-card" color="primary" *ngIf="ow_detailed">
+          <mat-card-header>
+            <div mat-card-avatar class="my-ow-avatar"></div>
+            <mat-card-title class="my-ow-title"><b>R2D2Soon</b></mat-card-title>
+            <mat-card-subtitle>Blizzard Account: R2D2Soon#1586</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content >
+            <div class="detail-played-heroes">
+              <ul><b>Most played heroes</b>
+                <li><button mat-button color="accent" (click)="openUserHeroDialog()">Lucio</button></li>
+                <li><button mat-button color="accent" (click)="openUserHeroDialog()">Pharah</button></li>
+                <li><button mat-button color="accent" (click)="openUserHeroDialog()">Winston</button></li>
+              </ul>
+            </div>
+            <br>
+            <button mat-raised-button color="accent" (click)="ow_detailed=false">Less Detail</button>
+          </mat-card-content>
         </mat-card>
       </div>
+
       <div class="my-team-container">
-          <mat-card>
+          <mat-card color="primary">
           
           </mat-card>
       </div>
+
       <div class="my-feed-container">
-          <mat-card>
-          
+          <mat-card color="accent">
+            
           </mat-card>
       </div>
+
       <div class="my-clips-container">
-          <mat-card>
+          <mat-card color="accent">
           
           </mat-card>
       </div>
+
       <div class="my-news-container">
-          <mat-card>
+          <mat-card color="accent">
           
           </mat-card>
       </div>
+
     </div>
   </mat-card>
 </div>

@@ -1,5 +1,7 @@
+import { UserHeroDialogComponent } from './../dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './../material.module';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogConfig } from '@angular/material';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  ow_detailed = false;
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openUserHeroDialog() {
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(UserHeroDialogComponent, dialogConfig);
   }
 
 }

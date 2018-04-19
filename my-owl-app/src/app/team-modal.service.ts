@@ -8,9 +8,7 @@ export class TeamModalService {
   constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(TeamModalComponent, {
-      width: '250px',
-    });
+    const dialogRef = this.dialog.open(TeamModalComponent, { });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');

@@ -1,6 +1,7 @@
 <h2 mat-dialog-title>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
 <mat-dialog-content>
 <h1>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h1>
+<img src="{{ player.imageLocation }}" alt="{{ player.alias }}" width="250px" height="250px">
 <h2>Role: {{ player.role }} </h2>
 <h2>Team: {{ player.team.name }} </h2>
 </mat-dialog-content>

@@ -8,4 +8,5 @@ export class Player {
     homeTown: String;
     team: Team;
     role: Role;
+    imageLocation: String;
 }

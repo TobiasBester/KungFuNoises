@@ -21,6 +21,12 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
     HomeComponent,
     TeamListComponent,
     ThemeSelectComponent,
+    UserHeroDialogComponent,
+    TeamModalComponent,
+    PlayerModalComponent
+  ],
+  entryComponents: [
+    TeamModalComponent,
     UserHeroDialogComponent
   ],
   imports: [
@@ -29,8 +35,7 @@ import { ThemeSelectComponent } from './theme-select/theme-select.component';
     AppRoutingModule,
     OverlayModule
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [UserHeroDialogComponent]
+  providers: [TeamModalService, PlayerModalService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

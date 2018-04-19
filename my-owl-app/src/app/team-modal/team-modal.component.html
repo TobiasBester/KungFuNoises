@@ -1,11 +1,23 @@
 <h2 mat-dialog-title>Select a Team</h2>
-<mat-dialog-content>
+<!-- <mat-dialog-content>
   <mat-button-toggle-group>
-    <mat-button-toggle *ngFor="let team of teams">
-      {{team.name}}
-    </mat-button-toggle>
+    <ng-container *ngFor="let team of teams">
+      <mat-button-toggle>
+        {{team.name}}
+      </mat-button-toggle>
+      <br />
+    </ng-container>
   </mat-button-toggle-group>
-</mat-dialog-content>
+</mat-dialog-content> -->
+<ng-container *ngFor="let team of teams">
+  <mat-button-toggle-group>
+    <mat-dialog-content>
+      <mat-button-toggle>
+        {{team.name}}
+      </mat-button-toggle>
+    </mat-dialog-content>
+  </mat-button-toggle-group>
+</ng-container>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>No</button>
   <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->

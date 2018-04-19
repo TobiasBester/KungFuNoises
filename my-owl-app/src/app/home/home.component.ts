@@ -1,3 +1,4 @@
+import { PlayerModalService } from './../player-modal.service';
 import { UserHeroDialogComponent } from './../dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './../material.module';
 import { Component, OnInit, Inject } from '@angular/core';
@@ -12,7 +13,8 @@ export class HomeComponent implements OnInit {
 
   ow_detailed = false;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+              public playerModalService: PlayerModalService) {}
 
   ngOnInit() {
   }
@@ -21,6 +23,11 @@ export class HomeComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.autoFocus = true;
+    dialogConfig.height = '60%';
+    dialogConfig.width = '60%';
+    dialogConfig.position = {
+      top: '10%'
+    };
 
     this.dialog.open(UserHeroDialogComponent, dialogConfig);
   }

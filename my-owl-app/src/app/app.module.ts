@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
@@ -34,10 +35,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   entryComponents: [
     TeamModalComponent,
     PlayerModalComponent,
-    UserHeroDialogComponent
+    UserHeroDialogComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     AppRoutingModule,
     OverlayModule

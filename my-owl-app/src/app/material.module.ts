@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -42,10 +41,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     CommonModule,
-    ReactiveFormsModule,
     BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule
+    BrowserAnimationsModule
   ],
   exports: [
     MatCardModule,

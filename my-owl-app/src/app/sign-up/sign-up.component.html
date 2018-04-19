@@ -28,9 +28,14 @@
         <mat-step [stepControl]="secondFormGroup">
           <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>Choose your team</ng-template>
-            <mat-form-field>
+            <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
+            <!-- <mat-form-field>
               <input matInput placeholder="Address" formControlName="secondCtrl" required>
+              <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
             </mat-form-field>
+            <mat-form-field>
+              <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
+            </mat-form-field> -->
             <div>
               <button mat-button matStepperPrevious>Back</button>
               <button mat-button matStepperNext>Next</button>

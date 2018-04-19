@@ -1,3 +1,4 @@
+import { TeamModalService } from './../team-modal.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule  } from '@angular/forms';
 
@@ -11,7 +12,7 @@ export class SignUpComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, public teamModalService: TeamModalService) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({

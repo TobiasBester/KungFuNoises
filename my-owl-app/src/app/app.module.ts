@@ -28,7 +28,8 @@ import { PlayerModalComponent } from './player-modal/player-modal.component';
     PlayerModalComponent
   ],
   entryComponents: [
-    TeamModalComponent
+    TeamModalComponent,
+    PlayerModalComponent
   ],
   imports: [
     BrowserModule,

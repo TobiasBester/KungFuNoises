@@ -1,3 +1,9 @@
-<p>
-  player-modal works!
-</p>
+<h2 mat-dialog-title>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
+<mat-dialog-content>
+<h1>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h1>
+<h2>Role: {{ player.role }} </h2>
+<h2>Team: {{ player.team.name }} </h2>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

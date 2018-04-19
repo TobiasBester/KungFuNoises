@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Player } from './../shared/models/player.model';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+
+import { PLAYERS } from '../shared/mock_data/players.mock';
 
 @Component({
   selector: 'app-player-modal',
@@ -6,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player-modal.component.css']
 })
 export class PlayerModalComponent implements OnInit {
+  player: Player;
 
-  constructor() { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+    this.player = PLAYERS.find(_player => _player.alias === data.alias);
+  }
 
   ngOnInit() {
   }
+
 
 }

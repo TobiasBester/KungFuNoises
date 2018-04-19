@@ -1,3 +1,4 @@
+import { PlayerModalService } from './player-modal.service';
 import { TeamModalService } from './team-modal.service';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, OnInit, HostBinding } from '@angular/core';
@@ -12,7 +13,9 @@ export class AppComponent implements OnInit {
 
   title = 'My Overwatch League';
   @HostBinding('class') componentCssClass;
-  constructor(public overlayContainer: OverlayContainer, public teamModalService: TeamModalService) {}
+  constructor(public overlayContainer: OverlayContainer,
+              public teamModalService: TeamModalService,
+              public playerModalService: PlayerModalService) {}
 
 /*  themeClass: string;
 

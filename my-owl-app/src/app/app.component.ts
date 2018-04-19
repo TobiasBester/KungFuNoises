@@ -17,24 +17,7 @@ export class AppComponent implements OnInit {
               public teamModalService: TeamModalService,
               public playerModalService: PlayerModalService) {}
 
-/*  themeClass: string;
-
-  constructor(
-    private overlayContainer: OverlayContainer,
-    private store: Store<any>
-  ) {}
-*/
-  ngOnInit() {
-   /* this.store
-      .subscribe(settings => {
-        this.themeClass = 'df-theme';
-
-        const overlayContainerClasses = this.overlayContainer.getContainerElement().classList;
-        const themeClassesToRemove = Array.from(overlayContainerClasses).filter((item: string) => item.includes('-theme'));
-        overlayContainerClasses.remove(...themeClassesToRemove);
-        overlayContainerClasses.add('df-theme');
-      });*/
-  }
+  ngOnInit() {}
 
   onSetTheme(theme) {
     this.overlayContainer.getContainerElement().classList.add(theme);

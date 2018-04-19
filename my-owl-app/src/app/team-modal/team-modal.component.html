@@ -1,13 +1,16 @@
 <h2 mat-dialog-title>Select a Team</h2>
 <mat-dialog-content>
-  <mat-button-toggle-group>
-    <ng-container *ngFor="let team of teams">
-      <mat-button-toggle [ngStyle]="dynamicStyles(team)">
-        <img src="{{ team.logoLocation }}" alt="logo" width="50px" height="50px">
-        <h5 style="margin: 0;">{{team.name}}</h5>
-      </mat-button-toggle>
-      <br />
-    </ng-container>
+  <mat-button-toggle-group style="display: block">
+    <mat-grid-list cols="4" rowHeight="200px">
+      <ng-container *ngFor="let team of teams">
+        <mat-grid-tile>
+          <mat-button-toggle [ngStyle]="dynamicStyles(team)">
+            <img src="{{ team.logoLocation }}" alt="logo" width="50px" height="50px">
+            <h5 style="margin: 0;">{{team.name}}</h5>
+          </mat-button-toggle>
+        </mat-grid-tile>
+      </ng-container>
+    </mat-grid-list>
   </mat-button-toggle-group>
 </mat-dialog-content>
 <mat-dialog-actions>

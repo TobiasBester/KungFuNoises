@@ -30,3 +30,35 @@
 .home-content {
 
 }
+
+.cards-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-areas: "my-ow my-team my-team"
+                        "my-feed my-clips my-news";
+}
+
+.my-ow-container {
+    grid-area: my-ow;
+}
+
+.my-team-container {
+    grid-column: 2/3;
+    grid-area: my-team;
+}
+
+.my-feed-container {
+    grid-area: my-feed;
+}
+
+.my-clips-container {
+    grid-area: my-clips;
+}
+
+.my-news-container {
+    grid-area: my-news;
+}

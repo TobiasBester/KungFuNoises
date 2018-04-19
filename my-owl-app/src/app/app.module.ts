@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { TeamListComponent } from './team-list/team-list.component';
 import { ThemeSelectComponent } from './theme-select/theme-select.component';
 import { TeamModalComponent } from './team-modal/team-modal.component';
+import { TeamModalService } from './team-modal.service';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,16 @@ import { TeamModalComponent } from './team-modal/team-modal.component';
     ThemeSelectComponent,
     TeamModalComponent
   ],
+  entryComponents: [
+    TeamModalComponent
+  ],
   imports: [
     BrowserModule,
     MaterialModule,
     AppRoutingModule,
     OverlayModule
   ],
-  providers: [],
+  providers: [TeamModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

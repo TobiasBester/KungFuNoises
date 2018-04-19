@@ -11,7 +11,25 @@
   <router-outlet></router-outlet>
   <br>
 
-  <mat-toolbar class="footer" color="primary">
+  <div>
+    <h1 class="mat-h1" style="color: azure;">Testing Section</h1>
+    <div>
+      <app-theme-select (chosenTheme)="chosenTheme($event)"></app-theme-select>
+    </div>
+
+    <div>
+      <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
+    </div>
+
+    <div>
+      <button mat-raised-button (click)="this.playerModalService.openDialog()">Player Modal Button</button>
+    </div>
+
+    <div style="height: 100px;">
+    </div>
+  </div>
+
+  <mat-toolbar class="footer">
     <div class="footer-content">
       <a mat-button class="owl-link" style="margin:10px" href="https://overwatchleague.com/en-us/" target="_blank">Overwatch League Website</a>
       <a mat-button class="ow-link" style="margin:10px" href="https://playoverwatch.com/en-us/" target="_blank">Overwatch Wesbite</a>
@@ -22,19 +40,3 @@
   </mat-toolbar>
 
 </div>
-
-<!-- <div>
-  <app-team-list></app-team-list>
-</div> -->
-
-<div>
-  <app-theme-select (chosenTheme)="chosenTheme($event)"></app-theme-select>
-</div>
-
-<div>
-  <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
-</div>
-
-<div>
-    <button mat-raised-button (click)="this.playerModalService.openDialog()">Player Modal Button</button>
-  </div>

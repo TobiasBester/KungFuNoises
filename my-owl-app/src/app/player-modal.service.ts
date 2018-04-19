@@ -9,7 +9,8 @@ export class PlayerModalService {
 
   openDialog(): void {
     this.dialog.open(PlayerModalComponent, {
-      data: { alias: 'Ado' }
+      data: { alias: 'Ado' },
+      width: '600px',
     });
   }
 }

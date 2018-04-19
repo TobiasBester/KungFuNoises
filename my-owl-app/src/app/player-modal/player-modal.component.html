@@ -1,9 +1,21 @@
-<h2 mat-dialog-title>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
+<!-- <h2 mat-dialog-title>{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2> -->
 <mat-dialog-content>
-<h2 class="mat-h2">{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
-<img src="{{ player.imageLocation }}" alt="{{ player.alias }}" width="250px" height="250px">
-<h3 class="mat-h3">Role: {{ player.role }} </h3>
-<h3 class="mat-h3">Team: {{ player.team.name }} </h3>
+  <h2 class="mat-h2">{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
+  <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <img src="{{ player.imageLocation }}" alt="{{ player.alias }}" width="250px" height="250px">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <h2 class="mat-h2">{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2">
+      <div class="container">
+          <h3 class="mat-h3">Role: {{ this.role }} </h3>
+          <h3 class="mat-h3">Team: {{ player.team.name }} </h3>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider></mat-divider>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>

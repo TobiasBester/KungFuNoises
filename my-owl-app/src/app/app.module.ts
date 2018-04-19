@@ -1,3 +1,4 @@
+import { UserHeroDialogComponent } from './dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -24,12 +25,14 @@ import { PlayerModalComponent } from './player-modal/player-modal.component';
     HomeComponent,
     TeamListComponent,
     ThemeSelectComponent,
+    UserHeroDialogComponent,
     TeamModalComponent,
     PlayerModalComponent
   ],
   entryComponents: [
     TeamModalComponent,
-    PlayerModalComponent
+    PlayerModalComponent,
+    UserHeroDialogComponent
   ],
   imports: [
     BrowserModule,

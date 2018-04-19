@@ -55,6 +55,32 @@ export const PLAYERS: Player[] = [
   { alias: 'Gambler', firstName: 'Jin-Woo', lastName: 'Heo', homeTown: 'Seoul, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.SUPPORT },
   { alias: 'Gamsu', firstName: 'YoungJin', lastName: 'Noh', homeTown: 'Gyeongju, KR', team: TEAMS.BOSTON_UPRISING, role: Role.TANK },
   { alias: 'Geguri', firstName: 'Seyeon', lastName: 'Kim', homeTown: 'Daejeon, KR', team: TEAMS.SHANGHAI_DRAGONS, role: Role.TANK },
-  { alias: 'Gesture', firstName: 'Jae-Hui', lastName: 'Hong', homeTown: 'Gunsan, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.TANK }
+  { alias: 'Gesture', firstName: 'Jae-Hui', lastName: 'Hong', homeTown: 'Gunsan, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.TANK },
+
+  { alias: 'gido', firstName: '	Gi-Do', lastName: 'Moon', homeTown: 'Incheon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.FLEX },
+  { alias: 'HaGoPeun', firstName: 'Hyeon-Woo', lastName: 'Jo', homeTown: 'Jinhae, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT },
+  { alias: 'HarryHook', firstName: 'Jonathan', lastName: 'Tejedor Rua', homeTown: 'Asturias, ES', team: TEAMS.DALLAS_FUEL, role: Role.SUPPORT },
+  { alias: 'Hooreg', firstName: 'Dong-Eun', lastName: 'Lee', homeTown: 'Busan, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.OFFENCE },
+  { alias: 'Hotba', firstName: 'Hong-Jun', lastName: 'Choi', homeTown: 'Seoul, KR', team: TEAMS.PHILADELPHIA_FUSION, role: Role.FLEX },
+  { alias: 'Hydration', firstName: 'Joao Pedro', lastName: 'Veloso de Goes Telles', homeTown: 'Monte Claros, BR', team: TEAMS.LOS_ANGELES_GLADIATORS, role: Role.OFFENCE },
+  { alias: 'iddqd', firstName: 'André', lastName: 'Dahlström', homeTown: 'Stockholm, SE', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.OFFENCE },
+  { alias: 'iRemiix', firstName: 'Luis', lastName: 'Galarza Figueroa', homeTown: 'Barceloneta, PR', team: TEAMS.LOS_ANGELES_GLADIATORS, role: Role.TANK },
+  { alias: 'Izayaki', firstName: 'Minchul', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.FLEX },
+  { alias: 'Jake', firstName: 'Jake', lastName: 'Lyon', homeTown: 'San Diego, CA, US', team: TEAMS.HOUSTON_OUTLAWS, role: Role.OFFENCE },
+  { alias: 'Janus', firstName: 'Jun-Hwa', lastName: 'Song', homeTown: 'Seoul, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.TANK },
+  { alias: 'Jjonak', firstName: 'Seong-Hyun', lastName: 'Bang', homeTown: 'Osan, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.SUPPORT },
+  { alias: 'Joemeister', firstName: 'Joseph', lastName: 'Gramano', homeTown: 'Toronto, CA', team: TEAMS.PHILADELPHIA_FUSION, role: Role.SUPPORT },
+  { alias: 'Kalios', firstName: 'WooYul', lastName: 'Shin', homeTown: 'Dangjin City, KR', team: TEAMS.BOSTON_UPRISING, role: Role.TANK },
+  { alias: 'Kariv', firstName: 'Young-Seo', lastName: 'Park', homeTown: 'Seoul, KR', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.SUPPORT },
+  { alias: 'Kellex', firstName: 'Kristian', lastName: 'Keller', homeTown: 'Roskilde, DK', team: TEAMS.BOSTON_UPRISING, role: Role.SUPPORT },
+  { alias: 'KSF', firstName: 'Kyle', lastName: 'Frandanisa', homeTown: 'Puyallup, WA, US', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.OFFENCE },
+  { alias: 'KuKi', firstName: 'Dae-Kuk', lastName: 'Kim', homeTown: 'Seongnam, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.TANK },
+  { alias: 'Libero', firstName: 'Hae-Seong', lastName: 'Kim', homeTown: 'Anyang, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.OFFENCE },
+  { alias: 'LiNkzr', firstName: 'Jiri', lastName: 'Masalin', homeTown: 'Turku, FI', team: TEAMS.HOUSTON_OUTLAWS, role: Role.OFFENCE },
+  { alias: 'Logix', firstName: 'Andreas', lastName: 'Berghmans', homeTown: 'Duffel, BE', team: TEAMS.FLORIDA_MAYHEM, role: Role.OFFENCE },
+  { alias: 'Manneten', firstName: 'Tim', lastName: 'Bylund', homeTown: 'Karlstad, SE', team: TEAMS.FLORIDA_MAYHEM, role: Role.FLEX },
+  { alias: 'Mano', firstName: 'Dong-Gyu', lastName: 'Kim', homeTown: 'Busan, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.TANK },
+  { alias: 'Meko', firstName: 'Tae-Hong', lastName: 'Kim', homeTown: 'Busan, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.TANK },
+  { alias: 'Mendokusaii', firstName: 'Lucas', lastName: 'Håkansson', homeTown: 'Spånga, SE', team: TEAMS.HOUSTON_OUTLAWS, role: Role.OFFENCE }
 
   ];

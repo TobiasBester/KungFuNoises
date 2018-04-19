@@ -1,5 +1,11 @@
-<h2 mat-dialog-title>Delete all</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
+<h2 mat-dialog-title>Select a Team</h2>
+<mat-dialog-content>
+  <mat-button-toggle-group>
+    <mat-button-toggle *ngFor="let team of teams">
+      {{team.name}}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>No</button>
   <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->

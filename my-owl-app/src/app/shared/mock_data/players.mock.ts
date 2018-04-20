@@ -1,8 +1,9 @@
+import { Store } from '@ngrx/store';
+import { SignUpComponent } from './../../sign-up/sign-up.component';
 import { Player } from '../models/player.model';
 import { Role } from '../enums/role.enum';
 import { TEAMS } from './teams.mock';
 
-// TO-DO: Complete List
 // tslint:disable:max-line-length
 export const PLAYERS: Player[] = [
   { alias: 'Ado', firstName: 'Gihyeon', lastName: 'Chon', homeTown: 'Chungju, KR', team: TEAMS.SHANGHAI_DRAGONS, role: Role.OFFENCE, imageLocation: '../assets/images/players/ado.png' },
@@ -57,7 +58,7 @@ export const PLAYERS: Player[] = [
   { alias: 'Geguri', firstName: 'Seyeon', lastName: 'Kim', homeTown: 'Daejeon, KR', team: TEAMS.SHANGHAI_DRAGONS, role: Role.TANK, imageLocation: '../assets/images/players/geguri.png'  },
   { alias: 'Gesture', firstName: 'Jae-Hui', lastName: 'Hong', homeTown: 'Gunsan, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.TANK, imageLocation: '../assets/images/players/gesture.png'  },
 
-  { alias: 'gido', firstName: '	Gi-Do', lastName: 'Moon', homeTown: 'Incheon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.FLEX, imageLocation: '../assets/images/players/gido.png'  },
+  { alias: 'gido', firstName: 'Gi-Do', lastName: 'Moon', homeTown: 'Incheon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.FLEX, imageLocation: '../assets/images/players/gido.png'  },
   { alias: 'HaGoPeun', firstName: 'Hyeon-Woo', lastName: 'Jo', homeTown: 'Jinhae, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT, imageLocation: '../assets/images/players/hagopeun.png'  },
   { alias: 'HarryHook', firstName: 'Jonathan', lastName: 'Tejedor Rua', homeTown: 'Asturias, ES', team: TEAMS.DALLAS_FUEL, role: Role.SUPPORT, imageLocation: '../assets/images/players/harryhook.png'  },
   { alias: 'Hooreg', firstName: 'Dong-Eun', lastName: 'Lee', homeTown: 'Busan, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.OFFENCE, imageLocation: '../assets/images/players/hooreg.png'  },
@@ -81,6 +82,62 @@ export const PLAYERS: Player[] = [
   { alias: 'Manneten', firstName: 'Tim', lastName: 'Bylund', homeTown: 'Karlstad, SE', team: TEAMS.FLORIDA_MAYHEM, role: Role.FLEX, imageLocation: '../assets/images/players/manneten.png'  },
   { alias: 'Mano', firstName: 'Dong-Gyu', lastName: 'Kim', homeTown: 'Busan, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.TANK, imageLocation: '../assets/images/players/mano.png'  },
   { alias: 'Meko', firstName: 'Tae-Hong', lastName: 'Kim', homeTown: 'Busan, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.TANK, imageLocation: '../assets/images/players/meko.png'  },
-  { alias: 'Mendokusaii', firstName: 'Lucas', lastName: 'Håkansson', homeTown: 'Spånga, SE', team: TEAMS.HOUSTON_OUTLAWS, role: Role.OFFENCE, imageLocation: '../assets/images/players/mendokusaii.png'  }
+  { alias: 'Mendokusaii', firstName: 'Lucas', lastName: 'Håkansson', homeTown: 'Spånga, SE', team: TEAMS.HOUSTON_OUTLAWS, role: Role.OFFENCE, imageLocation: '../assets/images/players/mendokusaii.png'  },
 
+  { alias: 'MG', firstName: 'Dongjian', lastName: 'Wu', homeTown: 'Guangdong, CN', team: TEAMS.SHANGHAI_DRAGONS, role: Role.TANK, imageLocation: '../assets/images/players/mg.png'  },
+  { alias: 'Mickie', firstName: 'Pongphop', lastName: 'Rattanasangchod', homeTown: 'Bangkok, TH', team: TEAMS.DALLAS_FUEL, role: Role.FLEX, imageLocation: '../assets/images/players/mickie.png'  },
+  { alias: 'Miro', firstName: 'Jin-Hyuk', lastName: 'Gong', homeTown: 'DaeJeon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.TANK, imageLocation: '../assets/images/players/miro.png'  },
+  { alias: 'Mistakes', firstName: 'Stanislav', lastName: 'Danilov', homeTown: 'Krasnoyarsk, RU', team: TEAMS.BOSTON_UPRISING, role: Role.OFFENCE, imageLocation: '../assets/images/players/mistakes.png'  },
+  { alias: 'Moth', firstName: 'Grant', lastName: 'Espe', homeTown: 'Worcester, MA, US', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.SUPPORT, imageLocation: '../assets/images/players/moth.png'  },
+  { alias: 'Muma', firstName: 'Austin', lastName: 'Wilmot', homeTown: 'Morrow, OH, US', team: TEAMS.HOUSTON_OUTLAWS, role: Role.TANK, imageLocation: '../assets/images/players/muma.png'  },
+  { alias: 'Munchkin', firstName: 'Sang-Beom', lastName: 'Byun', homeTown: 'Seoul, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.OFFENCE, imageLocation: '../assets/images/players/munchkin.png'  },
+  { alias: 'Neko', firstName: 'SeHyun', lastName: 'Park', homeTown: 'Changwon, KR', team: TEAMS.BOSTON_UPRISING, role: Role.SUPPORT, imageLocation: '../assets/images/players/neko.png'  },
+  { alias: 'Neptuno', firstName: 'Alberto', lastName: 'González Molinillo', homeTown: 'El Puerto de Santa María, ES', team: TEAMS.PHILADELPHIA_FUSION, role: Role.SUPPORT, imageLocation: '../assets/images/players/neptuno.png'  },
+  { alias: 'Nevix', firstName: 'Andreas', lastName: 'Karlsson', homeTown: 'Helgenäs, SE', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.FLEX, imageLocation: '../assets/images/players/nevix.png'  },
+  { alias: 'Nomy', firstName: 'David', lastName: 'Lizarraga Ramirez Osmar', homeTown: 'Tijuana, MX', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.TANK, imageLocation: '../assets/images/players/nomy.png'  },
+  { alias: 'NotE', firstName: 'Lucas', lastName: 'Meissner', homeTown: 'Barrie, CA', team: TEAMS.BOSTON_UPRISING, role: Role.TANK, imageLocation: '../assets/images/players/note.png'  },
+  { alias: 'Numlocked', firstName: 'Sebastian', lastName: 'Barton', homeTown: 'Leamington Spa, GB', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.TANK, imageLocation: '../assets/images/players/numlocked.png'  },
+  { alias: 'NUS', firstName: 'Jong-Seok', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT, imageLocation: '../assets/images/players/numlocked.png'  },
+  { alias: 'OGE', firstName: 'Minseok', lastName: 'Son', homeTown: 'KR', team: TEAMS.DALLAS_FUEL, role: Role.TANK, imageLocation: '../assets/images/players/oge.png'  },
+  { alias: 'Pine', firstName: 'Do-Hyeon', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.FLEX, imageLocation: '../assets/images/players/pine.png'  },
+  { alias: 'Poko', firstName: 'Gael', lastName: 'Gouzerch', homeTown: 'Nîmes, FR', team: TEAMS.PHILADELPHIA_FUSION, role: Role.FLEX, imageLocation: '../assets/images/players/poko.png'  },
+  { alias: 'Profit', firstName: 'Jun-Young', lastName: 'Park', homeTown: 'Jinju, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.OFFENCE, imageLocation: '../assets/images/players/profit.png'  },
+  { alias: 'Rawkus', firstName: 'Shane', lastName: 'Flaherty', homeTown: 'New York City, NY, US', team: TEAMS.HOUSTON_OUTLAWS, role: Role.SUPPORT, imageLocation: '../assets/images/players/rawkus.png'  },
+  { alias: 'Roshan', firstName: 'Wenhao', lastName: 'Jing', homeTown: 'Henan, CN', team: TEAMS.SHANGHAI_DRAGONS, role: Role.TANK, imageLocation: '../assets/images/players/roshan.png'  },
+  { alias: 'ryujehong', firstName: 'Je-Hong', lastName: 'Ryu', homeTown: 'Incheon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.SUPPORT, imageLocation: '../assets/images/players/ryujehong.png'  },
+  { alias: 'SADO', firstName: 'Su-Min', lastName: 'Kim', homeTown: 'Gwangju, KR', team: TEAMS.PHILADELPHIA_FUSION, role: Role.TANK, imageLocation: '../assets/images/players/sado.png'  },
+  { alias: 'Saebyeolbe', firstName: 'Jong-Ryeol', lastName: 'Park', homeTown: 'Yangju, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.OFFENCE, imageLocation: '../assets/images/players/saebyeolbe.png'  },
+  { alias: 'Sayaplayer', firstName: 'Jeong-Woo', lastName: 'Ha', homeTown: 'Daegu, KR', team: TEAMS.FLORIDA_MAYHEM, role: Role.OFFENCE, imageLocation: '../assets/images/players/sayaplayer.png'  },
+  { alias: 'Seagull', firstName: 'Brandon', lastName: 'Larned', homeTown: 'Gig Harbor, WA, US', team: TEAMS.DALLAS_FUEL, role: Role.FLEX, imageLocation: '../assets/images/players/seagull.png'  },
+
+  { alias: 'ShaDowBurn', firstName: 'Georgii', lastName: 'Gushcha', homeTown: 'Moscow, RU', team: TEAMS.PHILADELPHIA_FUSION, role: Role.OFFENCE, imageLocation: '../assets/images/players/shadowburn.png'  },
+  { alias: 'Shaz', firstName: 'Jonas Samuel', lastName: 'Suovaara', homeTown: 'Jyväskylä, FI', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT, imageLocation: '../assets/images/players/shaz.png'  },
+  { alias: 'silkthread', firstName: 'Ted', lastName: 'Wang', homeTown: 'Katy, TX, US', team: TEAMS.LOS_ANGELES_GLADIATORS, role: Role.OFFENCE, imageLocation: '../assets/images/players/silkthread.png'  },
+  { alias: 'sinatraa', firstName: 'Jay', lastName: 'Won', homeTown: 'Shoreline, WA, US', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.OFFENCE, imageLocation: '../assets/images/players/sinatraa.png'  },
+  { alias: 'Sky', firstName: 'Junjian', lastName: 'He', homeTown: 'Yueyang, CN', team: TEAMS.SHANGHAI_DRAGONS, role: Role.SUPPORT, imageLocation: '../assets/images/players/sky.png'  },
+  { alias: 'sleepy', firstName: 'Nikola', lastName: 'Andrews', homeTown: 'Lakeland, FL, US', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.SUPPORT, imageLocation: '../assets/images/players/sleepy.png'  },
+  { alias: 'Snillo', firstName: 'Simon', lastName: 'Ekström', homeTown: 'Hallstahammar, SE', team: TEAMS.PHILADELPHIA_FUSION, role: Role.OFFENCE, imageLocation: '../assets/images/players/snillo.png'  },
+  { alias: 'Snow', firstName: 'Mikias', lastName: 'Yohannes', homeTown: 'Addis Ababa, ET', team: TEAMS.BOSTON_UPRISING, role: Role.SUPPORT, imageLocation: '../assets/images/players/snow.png'  },
+  { alias: 'Soon', firstName: 'Terence', lastName: 'Tarlier', homeTown: 'Hangest-En-Santerre, FR', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.OFFENCE, imageLocation: '../assets/images/players/soon.png'  },
+  { alias: 'Space', firstName: 'Indy', lastName: 'Halpern', homeTown: 'New York City, NY, US', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.FLEX, imageLocation: '../assets/images/players/space.png'  },
+  { alias: 'SPREE', firstName: 'Alexandre', lastName: 'Vanhomwegen', homeTown: 'Koksijde, BE', team: TEAMS.HOUSTON_OUTLAWS, role: Role.FLEX, imageLocation: '../assets/images/players/spree.png'  },
+  { alias: 'STRIKER', firstName: 'Nam-Ju', lastName: 'Gwon', homeTown: 'Wonju, KR', team: TEAMS.BOSTON_UPRISING, role: Role.OFFENCE, imageLocation: '../assets/images/players/striker.png'  },
+  { alias: 'super', firstName: 'Matthew', lastName: 'DeLisi', homeTown: 'Philadelphia, US', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.FLEX, imageLocation: '../assets/images/players/super.png'  },
+  { alias: 'Surefour', firstName: 'Lane', lastName: 'Roberts', homeTown: 'Calgary, CA', team: TEAMS.LOS_ANGELES_GLADIATORS, role: Role.OFFENCE, imageLocation: '../assets/images/players/surefour.png'  },
+  { alias: 'Taimou', firstName: 'Timo', lastName: 'Kettunen', homeTown: 'Juankoski, FI', team: TEAMS.DALLAS_FUEL, role: Role.OFFENCE, imageLocation: '../assets/images/players/taimou.png'  },
+  { alias: 'TiZi', firstName: 'Janghyun', lastName: 'Hwang', homeTown: 'KR', team: TEAMS.LONDON_SPITFIRE, role: Role.TANK, imageLocation: '../assets/images/players/tizi.png'  },
+  { alias: 'tobi', firstName: 'Jin-Mo', lastName: 'Yang', homeTown: 'Ulsan, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.SUPPORT, imageLocation: '../assets/images/players/tobi.png'  },
+  { alias: 'TviQ', firstName: 'Kevin', lastName: 'Lindström', homeTown: 'Vasteras, SE', team: TEAMS.FLORIDA_MAYHEM, role: Role.OFFENCE, imageLocation: '../assets/images/players/tviq.png'  },
+  { alias: 'Unkoe', firstName: 'Benjamin', lastName: 'Chevasson', homeTown: 'Nevers, FR', team: TEAMS.DALLAS_FUEL, role: Role.SUPPORT, imageLocation: '../assets/images/players/unkoe.png'  },
+  { alias: 'Verbo', firstName: 'Stefano', lastName: 'Disalvo', homeTown: 'Toronto, CA', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.SUPPORT, imageLocation: '../assets/images/players/verbo.png'  },
+  { alias: 'Void', firstName: 'Jun Woo', lastName: 'Kang', homeTown: 'South Korea, KR', team: TEAMS.LOS_ANGELES_GLADIATORS, role: Role.FLEX, imageLocation: '../assets/images/players/void.png'  },
+  { alias: 'Wekeed', firstName: 'Seok-Woo', lastName: 'Choi', homeTown: 'Bucheon, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.OFFENCE, imageLocation: '../assets/images/players/wekeed.png'  },
+  { alias: 'WooHyaL', firstName: 'Seung-Hyun', lastName: 'Seong', homeTown: 'Suwon, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.FLEX, imageLocation: '../assets/images/players/woohyal.png'  },
+  { alias: 'XepheR', firstName: 'Jae-Mo', lastName: 'Koo', homeTown: 'Busan, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.FLEX, imageLocation: '../assets/images/players/xepher.png'  },
+  { alias: 'Xushu', firstName: 'Junjie', lastName: 'Liu', homeTown: 'Hunan, CN', team: TEAMS.SHANGHAI_DRAGONS, role: Role.TANK, imageLocation: '../assets/images/players/xushu.png'  },
+
+  { alias: 'zappis', firstName: 'Joonas', lastName: 'Alakurtti', homeTown: 'Turku, FI', team: TEAMS.FLORIDA_MAYHEM, role: Role.FLEX, imageLocation: '../assets/images/players/zappis.png'  },
+  { alias: 'Zebbosai', firstName: 'Sebastian', lastName: 'Olsson', homeTown: 'Lysekil, SE', team: TEAMS.FLORIDA_MAYHEM, role: Role.SUPPORT, imageLocation: '../assets/images/players/zebbosai.png'  },
+  { alias: 'ZUNBA', firstName: 'Joon-Hyeok', lastName: 'Kim', homeTown: 'Boryung, KR', team: TEAMS.SEOUL_DYNASTY, role: Role.FLEX, imageLocation: '../assets/images/players/zunba.png'  },
+  { alias: 'Zuppeh', firstName: 'Aleksi', lastName: 'Kuntsi', homeTown: 'Turku, FI', team: TEAMS.FLORIDA_MAYHEM, role: Role.SUPPORT, imageLocation: '../assets/images/players/zuppeh.png'  }
   ];

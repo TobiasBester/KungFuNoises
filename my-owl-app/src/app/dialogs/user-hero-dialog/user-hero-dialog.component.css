@@ -1,24 +1,46 @@
+body {
+    background: lightgrey;
+}
+
 .mdc {
+    margin: 1%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
-    grid-template-areas: "twitch-clips comparison"
-                         "twitch-clips guides";
+    grid-template-areas: "twitch-clips twitch-clips"
+                         "comparison guides";
 }
 
 .pro-comparison {
     grid-area: comparison;
 }
 
+.card-comparison {
+    font-family: 'Exo 2',sans-serif;
+    background: #FF8900;
+}
+
 .pro-guides {
-    grid-area: guides
+    grid-area: guides;
+}
+
+.card-guides {
+    font-family: 'Exo 2',sans-serif;
+    background: #FF8900;
 }
 
 .pro-clips {
     grid-row: 1/2;
     grid-area: twitch-clips;
+}
+
+.card-clips {
+    font-family: 'Exo 2',sans-serif;
+    background: #FF8900;
 }
 
 .player-img {

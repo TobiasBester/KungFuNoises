@@ -1,21 +1,23 @@
-<h2 mat-dialog-title>R2D2Soon playing as Lucio</h2>
+<div >
+
+<h2 mat-dialog-title style="font-family:'Exo 2',sans-serif;">R2D2Soon playing as Lucio</h2>
 
 <mat-dialog-content>
   <div class="mdc">
     <div class="pro-comparison">
-      <mat-card color="accent">
+      <mat-card class="card-comparison">
         <mat-card-title>Top Overwatch League Lucio Players</mat-card-title>
         <mat-card-content>
           <ul>
-            <li><img src="{{player.imageLocation}}" class="player-img"><br>{{ player.alias }}</li>
-            <li><img src="{{player.imageLocation}}" class="player-img"><br>{{ player.alias }}</li>
-            <li><img src="{{player.imageLocation}}" class="player-img"><br>{{ player.alias }}</li>
+            <li><img src="{{player1.imageLocation}}" class="player-img"><br>{{ player1.alias }}</li>
+            <li><img src="{{player2.imageLocation}}" class="player-img"><br>{{ player2.alias }}</li>
+            <li><img src="{{player3.imageLocation}}" class="player-img"><br>{{ player3.alias }}</li>
           </ul>
         </mat-card-content>
       </mat-card>
     </div>
     <div class="pro-guides">
-      <mat-card color="primary">
+      <mat-card class="card-guides" color="accent">
         <mat-card-title>Lucio Guides</mat-card-title>
         <mat-card-content>
           <ul>
@@ -27,20 +29,22 @@
       </mat-card>
     </div>
     <div class="pro-clips">
-      <mat-card color="accent">
-          <mat-card-title>Lucio Highlights</mat-card-title>
-          <mat-card-content>
+      <mat-card class="card-clips" color="accent">
+          <mat-card-title>Latest Lucio Clip</mat-card-title>
+          <mat-card-content style="text-align: center;">
             <iframe src="https://clips.twitch.tv/embed?clip=TransparentTentativeCodKappaWealth&autoplay=false&tt_medium=clips_embed" 
                     width="640" 
                     height="360" 
-                    frameborder="0" 
+                    frameborder="1" 
                     scrolling="no" allowfullscreen="true"></iframe>
           </mat-card-content>
       </mat-card>
     </div>
   </div>
 </mat-dialog-content>
-
+<br>
 <mat-dialog-actions>
-  <button mat-raised-button (click)="close()">Close</button>
+  <button mat-raised-button (click)="close()" color="primary">Close</button>
 </mat-dialog-actions>
+
+</div>

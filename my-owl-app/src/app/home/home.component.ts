@@ -19,16 +19,18 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  openUserHeroDialog(playerName) {
+  openUserHeroDialog(playerName1, playerName2, playerName3) {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.autoFocus = true;
-    dialogConfig.height = '75%';
-    dialogConfig.width = '75%';
+    dialogConfig.height = '90%';
+    dialogConfig.width = '80%';
     dialogConfig.position = {
-      top: '10%'
+      top: '3%'
     };
-    dialogConfig.data = { alias: playerName};
+    dialogConfig.data = { alias1: playerName1,
+                          alias2: playerName2,
+                          alias3: playerName3};
 
     this.dialog.open(UserHeroDialogComponent, dialogConfig);
   }

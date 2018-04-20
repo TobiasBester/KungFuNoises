@@ -1,5 +1,26 @@
 .mdc {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-areas: "twitch-clips comparison"
+                         "twitch-clips guides";
+}
+
+.pro-comparison {
+    grid-area: comparison;
+}
+
+.pro-guides {
+    grid-area: guides
+}
+
+.pro-clips {
+    grid-row: 1/2;
+    grid-area: twitch-clips;
+}
+
+.player-img {
+    width: 50px;
 }

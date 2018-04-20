@@ -13,10 +13,11 @@ export class UserHeroDialogComponent implements OnInit {
   player: Player;
   httpRequest: XMLHttpRequest;
 
-
   constructor(
     private dialogRef: MatDialogRef<UserHeroDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) {}
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+      this.player = PLAYERS.find(_player => _player.alias === data.alias);
+    }
 
   ngOnInit() {
   }

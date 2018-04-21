@@ -16,14 +16,23 @@
 
 .prev-result {
     margin: 0px auto;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .latest-match {
-    flex-grow: 3;
+    flex-grow: 2;
     text-align: center;
 }
 
 .team-details {
     flex-grow: 1;
     text-align: center;
+}
+
+.t-d-box {
+    border: solid lightgray 5px;
+}
+
+.team-standings {
+    line-height: 70%;
 }

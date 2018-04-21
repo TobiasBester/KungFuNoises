@@ -26,3 +26,14 @@
 .detail-played-heroes {
     text-align: center;
 }
+
+.path-to-pro {
+    padding: 0px;
+    text-align: center;
+    background-size: cover;
+}
+
+.p2p-img {
+    width: 100%;
+    padding: 0px;
+}

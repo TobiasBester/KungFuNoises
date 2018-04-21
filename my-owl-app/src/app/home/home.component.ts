@@ -1,3 +1,6 @@
+import { TEAMS, TEAMS_LIST } from './../shared/mock_data/teams.mock';
+import { TeamListComponent } from './../team-list/team-list.component';
+import { Team } from './../shared/models/team.model';
 import { PlayerModalService } from './../player-modal.service';
 import { UserHeroDialogComponent } from './../dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './../material.module';
@@ -12,6 +15,7 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogConfig } from '@angu
 export class HomeComponent implements OnInit {
 
   ow_detailed = false;
+  myTeam = TEAMS.SHANGHAI_DRAGONS;
 
   constructor(public dialog: MatDialog,
               public playerModalService: PlayerModalService) {}

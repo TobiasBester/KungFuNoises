@@ -11,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class TeamCardComponent implements OnInit {
 
   myTeam = TEAMS.SHANGHAI_DRAGONS;
+  prevTeam = TEAMS.FLORIDA_MAYHEM;
+  latestTeam = TEAMS.BOSTON_UPRISING;
   showSpoiler = false;
 
   constructor() { }

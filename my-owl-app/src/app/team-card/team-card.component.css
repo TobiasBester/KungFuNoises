@@ -15,7 +15,9 @@
 }
 
 .prev-result {
+    width: 70%;
     margin: 0px auto;
+    line-height: 70%;
     font-family: 'Exo 2', sans-serif;
 }
 

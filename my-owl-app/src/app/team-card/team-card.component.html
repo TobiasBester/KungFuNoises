@@ -1,20 +1,26 @@
 <mat-card color="primary">
-  <mat-toolbar class="my-team-toolbar" color="primary">{{ myTeam.name }}</mat-toolbar>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="my-team-toolbar">
+      <img src="{{ myTeam.logoLocation }}" style="width: 5%; padding-right: 5px;">
+      {{ myTeam.name }}
+    </mat-toolbar-row>
+  </mat-toolbar>
   <div class="team-content">
     <div class="prev-match">
       <h2>Previous Match</h2>
       <mat-card >
         <div *ngIf="!showSpoiler">
-          <button mat-button (click)="showSpoiler = true">Show Result</button>
+          <button mat-button (click)="showSpoiler = true" color="accent">Show Result</button>
         </div>
         <div *ngIf="showSpoiler" class="prev-result">
-          <p> vs. Florida Mayhem</p>
+          <img src="{{ prevTeam.logoLocation }}" style="width: 20%;">
+          <p>{{prevTeam.name}}</p>  
           <h3>3 - 1</h3>
           <p style="color: red">LOST</p>
         </div>
       </mat-card>
       <br>
-      <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="primary">Match Report</a>
+      <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">Match Report</a>
     </div>
 
     <div class="latest-match">
@@ -22,7 +28,7 @@
       <div>
           <iframe src="https://player.twitch.tv/?autoplay=false&video=v252705386"
             frameborder="0" allowfullscreen="true" 
-            scrolling="no" height="300" width="400">
+            scrolling="no" height="338" width="480">
           </iframe>
       </div>
     </div>
@@ -30,18 +36,20 @@
     <div class="team-details">
       <h2>Team Details</h2>
       <div class="t-d-box">
-        <div><a mat-raised-button color="primary" href="https://dragons.overwatchleague.cn/en-us/" target="_blank">Visit Website</a></div><br>
-        <div><a mat-raised-button color="primary" href="https://dragons.overwatchleague.cn/en-us/roster" target="_blank">View Roster</a></div><br>
+        <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/" target="_blank">Visit Website</a></div><br>
+        <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/roster" target="_blank">View Roster</a></div><br>
+        <mat-divider [inset]="true"></mat-divider>
         <div class="team-standings">
           <h4><i>Stage Standings</i></h4>
-          <p><b>12th</b></p>
-          <p>0W-6L</p><br>
+          <p><b>Ranking: 12</b></p>
+          <p>0W-6L</p>
+          <mat-divider [inset]="true"></mat-divider>
           <h4><i>Season Standings</i></h4>
-          <p><b>12th</b></p>
+          <p><b>Ranking: {{ myTeam.standing }}</b></p>
           <p>0W-26L</p>
         </div>
       </div>
-      
     </div>
+    
   </div>
 </mat-card>

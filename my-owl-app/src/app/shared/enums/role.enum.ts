@@ -2,5 +2,6 @@ export enum Role {
     SUPPORT,
     FLEX,
     TANK,
-    OFFENCE
+    OFFENCE,
+    DEFENCE
 }

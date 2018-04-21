@@ -15,7 +15,6 @@ export class UserHeroDialogComponent implements OnInit {
   player2: Player;
   player3: Player;
   hero: Hero;
-  httpRequest: XMLHttpRequest;
 
   constructor(
     private dialogRef: MatDialogRef<UserHeroDialogComponent>,

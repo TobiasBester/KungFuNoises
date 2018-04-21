@@ -22,6 +22,7 @@ import { TeamCardComponent } from './team-card/team-card.component';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { MyowCardComponent } from './myow-card/myow-card.component';
 import { ClipsCardComponent } from './clips-card/clips-card.component';
+import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +39,15 @@ import { ClipsCardComponent } from './clips-card/clips-card.component';
     TeamCardComponent,
     NewsCardComponent,
     MyowCardComponent,
-    ClipsCardComponent
+    ClipsCardComponent,
+    ClipsDialogComponent
   ],
   entryComponents: [
     TeamModalComponent,
     PlayerModalComponent,
     UserHeroDialogComponent,
-    SignUpComponent
+    SignUpComponent,
+    ClipsDialogComponent
   ],
   imports: [
     BrowserModule,

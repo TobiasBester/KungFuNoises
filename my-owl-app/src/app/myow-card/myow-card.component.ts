@@ -16,8 +16,7 @@ export class MyowCardComponent implements OnInit {
   ow_detailed = false;
   myTeam = TEAMS.SHANGHAI_DRAGONS;
 
-  constructor(public dialog: MatDialog,
-              public playerModalService: PlayerModalService) {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
   }

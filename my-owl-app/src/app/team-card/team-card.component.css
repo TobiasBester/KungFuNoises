@@ -22,12 +22,12 @@
 }
 
 .latest-match {
-    flex-grow: 2;
+    flex-grow: 3;
     text-align: center;
 }
 
 .team-details {
-    flex-grow: 1;
+    flex-grow: 2;
     text-align: center;
 }
 

@@ -1,0 +1,33 @@
+.news-toolbar {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 200%;
+}
+
+.article-toolbar {
+    display: flex;
+    justify-content: start;
+    border: rgb(245, 140, 20) 1px solid;
+}
+
+.news-img {
+    width: 15%;
+}
+
+.news-headline {
+    flex-grow: 3;
+    background: blue;
+    font-size: 70%;
+    word-wrap: break-word;
+}
+
+.spacer2 {
+    flex: 0.2 1 auto;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.news-readmore {
+    flex-grow: 1;
+}

@@ -8,19 +8,21 @@
   <div class="team-content">
     <div class="prev-match">
       <h2>Previous Match</h2>
-      <mat-card >
+      <img src="{{ prevTeam.logoLocation }}" style="width: 20%;">
+      <p>{{prevTeam.name}}</p>
+      <mat-card>
         <div *ngIf="!showSpoiler">
           <button mat-button (click)="showSpoiler = true" color="accent">Show Result</button>
         </div>
         <div *ngIf="showSpoiler" class="prev-result">
-          <img src="{{ prevTeam.logoLocation }}" style="width: 20%;">
-          <p>{{prevTeam.name}}</p>  
+            
           <h3>3 - 1</h3>
           <p style="color: red">LOST</p>
+          <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">Match Report</a>
         </div>
       </mat-card>
       <br>
-      <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">Match Report</a>
+      
     </div>
 
     <div class="latest-match">

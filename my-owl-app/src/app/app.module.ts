@@ -18,6 +18,7 @@ import { TeamModalService } from './team-modal.service';
 import { PlayerModalService } from './player-modal.service';
 import { PlayerModalComponent } from './player-modal/player-modal.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { TeamCardComponent } from './team-card/team-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     UserHeroDialogComponent,
     TeamModalComponent,
     PlayerModalComponent,
-    SignUpComponent
+    SignUpComponent,
+    TeamCardComponent
   ],
   entryComponents: [
     TeamModalComponent,

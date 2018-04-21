@@ -1,0 +1,29 @@
+.my-team-toolbar {
+    margin: 0px 0px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+.team-content {
+    display: flex;
+}
+
+.prev-match {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.prev-result {
+    margin: 0px auto;
+}
+
+.latest-match {
+    flex-grow: 3;
+    text-align: center;
+}
+
+.team-details {
+    flex-grow: 1;
+    text-align: center;
+}

@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  openUserHeroDialog(playerName1, playerName2, playerName3) {
+  openUserHeroDialog(hero1, playerName1, playerName2, playerName3) {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.autoFocus = true;
@@ -28,7 +28,8 @@ export class HomeComponent implements OnInit {
     dialogConfig.position = {
       top: '3%'
     };
-    dialogConfig.data = { alias1: playerName1,
+    dialogConfig.data = { heroName: hero1,
+                          alias1: playerName1,
                           alias2: playerName2,
                           alias3: playerName3};
 

@@ -20,7 +20,8 @@
       <div class="my-ow-container">
         <!-- SIMPLE -->
         <mat-card class="my-ow-card" color="primary" *ngIf="!ow_detailed">
-            <mat-card-title class="my-ow-title">R2D2Soon</mat-card-title>
+            <mat-toolbar class="my-ow-title" color="primary">R2D2Soon</mat-toolbar>
+            <br>
             <mat-card-subtitle>Blizzard Account: R2D2Soon#1586</mat-card-subtitle>
           <mat-card-content >
             <img src="../../assets/images/heroes/Lucio_portrait.png" class="profile-img">
@@ -45,9 +46,9 @@
           <mat-card-content >
             <div class="detail-played-heroes">
               <b>Most played heroes</b><br>
-                <br><button mat-button color="accent" (click)="openUserHeroDialog('Ark','Closer','BigGoose')">Lucio</button>
-                <button mat-button color="accent" (click)="openUserHeroDialog('Agilities','Hydration','Eqo')">Pharah</button>
-                <button mat-button color="accent" (click)="openUserHeroDialog('Fissure','Gesture','Mano')">Winston</button>
+                <br><button mat-button color="accent" (click)="openUserHeroDialog('Lucio','Ark','NUS','BigGoose')">Lucio</button>
+                <button mat-button color="accent" (click)="openUserHeroDialog('Pharah','Agilities','Hydration','FLETA')">Pharah</button>
+                <button mat-button color="accent" (click)="openUserHeroDialog('Winston','Fissure','Gesture','Mano')">Winston</button>
             </div>
             <br>
             <button mat-raised-button color="accent" (click)="ow_detailed=false">Less Detail</button>
@@ -56,9 +57,7 @@
       </div>
 
       <div class="my-team-container">
-          <mat-card color="primary">
-          
-          </mat-card>
+          <app-team-card></app-team-card>
       </div>
 
       <div class="my-feed-container">

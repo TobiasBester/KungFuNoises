@@ -1,0 +1,28 @@
+<mat-card color="primary">
+  <mat-toolbar class="my-team-toolbar" color="primary">{{ myTeam.name }}</mat-toolbar>
+  <div class="team-content">
+    <div class="prev-match">
+      <h2>Previous Match</h2>
+      <mat-card >
+        <div *ngIf="!showSpoiler">
+          <button mat-button (click)="showSpoiler = true">Show Result</button>
+        </div>
+        <div *ngIf="showSpoiler" class="prev-result">
+          <p> vs. Florida Mayhem</p>
+          <h3>3 - 1</h3>
+          <p style="color: red">LOST</p>
+        </div>
+      </mat-card>
+      <br>
+      <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="primary">Match Report</a>
+    </div>
+
+    <div class="latest-match">
+      <h2>Latest Match</h2>
+    </div>
+
+    <div class="team-details">
+      <h2>Team Details</h2>
+    </div>
+  </div>
+</mat-card>

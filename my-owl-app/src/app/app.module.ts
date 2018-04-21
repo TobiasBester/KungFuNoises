@@ -19,6 +19,8 @@ import { PlayerModalService } from './player-modal.service';
 import { PlayerModalComponent } from './player-modal/player-modal.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TeamCardComponent } from './team-card/team-card.component';
+import { NewsCardComponent } from './news-card/news-card.component';
+import { MyowCardComponent } from './myow-card/myow-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { TeamCardComponent } from './team-card/team-card.component';
     TeamModalComponent,
     PlayerModalComponent,
     SignUpComponent,
-    TeamCardComponent
+    TeamCardComponent,
+    NewsCardComponent,
+    MyowCardComponent
   ],
   entryComponents: [
     TeamModalComponent,

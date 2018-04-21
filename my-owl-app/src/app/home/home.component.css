@@ -39,7 +39,7 @@
     grid-row-gap: 5px;
     grid-column-gap: 5px;
     grid-template-areas: "my-ow my-team my-team"
-                        "my-feed my-clips my-news";
+                        "my-news my-news my-clips";
 }
 
 .my-ow-container {
@@ -61,32 +61,4 @@
 
 .my-news-container {
     grid-area: my-news;
-}
-
-.my-ow-card {
-    text-align: center;
-    font-family: 'Exo 2', sans-serif;
-}
-
-.my-ow-title {
-    font-family: 'Exo 2', sans-serif;
-    text-transform: uppercase;
-}
-
-.profile-img {
-    width: 25%;
-}
-
-.my-ow-avatar {
-    background-image: url(../../assets/images/heroes/Lucio_portrait.png);
-    background-size: cover;
-}
-
-.played-heroes {
-    float: right;
-    text-align: start;
-}
-
-.detail-played-heroes {
-    text-align: center;
 }

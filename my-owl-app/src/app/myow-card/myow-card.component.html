@@ -1,0 +1,42 @@
+<!-- SIMPLE -->
+<mat-card class="my-ow-card" color="primary" *ngIf="!ow_detailed">
+    <mat-toolbar class="my-ow-title" color="primary">R2D2Soon</mat-toolbar>
+    <br>
+    <mat-card-subtitle>Blizzard Account: R2D2Soon#1586</mat-card-subtitle>
+  <mat-card-content >
+    <img src="../../assets/images/heroes/Lucio_portrait.png" class="profile-img">
+    <div class="played-heroes">
+      <ul><b>Most played heroes</b>
+        <li>Lucio</li>
+        <li>Pharah</li>
+        <li>Winston</li>
+      </ul>
+    </div>
+    <br>
+    <button mat-raised-button color="accent" (click)="ow_detailed=true">More Detail</button>
+  </mat-card-content>
+</mat-card>
+<!-- ow_detailed -->
+<mat-card class="my-ow-card" color="primary" *ngIf="ow_detailed">
+  <mat-card-header>
+    <div mat-card-avatar class="my-ow-avatar"></div>
+    <mat-card-title class="my-ow-title"><b>R2D2Soon</b></mat-card-title>
+    <mat-card-subtitle>Blizzard Account: R2D2Soon#1586</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content >
+    <div class="detail-played-heroes">
+      <b>Most played heroes</b><br>
+        <br><button mat-button color="accent" (click)="openUserHeroDialog('Lucio','Ark','NUS','BigGoose')">Lucio</button>
+        <button mat-button color="accent" (click)="openUserHeroDialog('Pharah','Agilities','Hydration','FLETA')">Pharah</button>
+        <button mat-button color="accent" (click)="openUserHeroDialog('Winston','Fissure','Gesture','Mano')">Winston</button>
+    </div>
+    <br>
+    <button mat-raised-button color="accent" (click)="ow_detailed=false">Less Detail</button>
+  </mat-card-content>
+</mat-card>
+<br>
+<mat-card class="path-to-pro">
+  <h2 style="background-color: rgb(142, 207, 43); padding: 5px;">Think you have what it takes to GO PRO?</h2>
+  <h5 style="text-align: center;">Find out more with Overwatch Path to Pro</h5>
+  <a mat-raised-button style="background-color: rgb(142, 207, 43);">Visit in New Tab</a>
+</mat-card>

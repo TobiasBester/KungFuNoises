@@ -21,6 +21,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { TeamCardComponent } from './team-card/team-card.component';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { MyowCardComponent } from './myow-card/myow-card.component';
+import { ClipsCardComponent } from './clips-card/clips-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MyowCardComponent } from './myow-card/myow-card.component';
     SignUpComponent,
     TeamCardComponent,
     NewsCardComponent,
-    MyowCardComponent
+    MyowCardComponent,
+    ClipsCardComponent
   ],
   entryComponents: [
     TeamModalComponent,

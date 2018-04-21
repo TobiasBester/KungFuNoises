@@ -1,0 +1,24 @@
+.clips-toolbar {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 200%;
+}
+
+.clips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.clip-thumb {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.clip-title {
+    word-wrap: break-word;
+    line-height: 90%;
+}
+
+.clip-thumb-img {
+    width: 55%;
+}

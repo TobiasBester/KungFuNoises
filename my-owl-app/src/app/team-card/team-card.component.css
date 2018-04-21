@@ -11,6 +11,7 @@
 
 .prev-match {
     flex-grow: 1;
+    width: 20%;
     text-align: center;
 }
 
@@ -22,12 +23,12 @@
 }
 
 .latest-match {
-    flex-grow: 3;
+    flex-grow: 2;
     text-align: center;
 }
 
 .team-details {
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
 }
 

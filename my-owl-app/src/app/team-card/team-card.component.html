@@ -5,6 +5,7 @@
       {{ myTeam.name }}
     </mat-toolbar-row>
   </mat-toolbar>
+  
   <div class="team-content">
     <div class="prev-match">
       <h2>Previous Match</h2>
@@ -18,7 +19,8 @@
             
           <h3>3 - 1</h3>
           <p style="color: red">LOST</p>
-          <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">Match Report</a>
+          <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">View Report</a><br><br>
+          <a mat-raised-button href="https://overwatchleague.com/en-us/match/10364" target="_blank" color="accent">View VOD</a>
         </div>
       </mat-card>
       <br>
@@ -30,7 +32,7 @@
       <div>
           <iframe src="https://player.twitch.tv/?autoplay=false&video=v252705386"
             frameborder="0" allowfullscreen="true" 
-            scrolling="no" height="338" width="480">
+            scrolling="no" height="340" width="600">
           </iframe>
       </div>
     </div>
@@ -38,17 +40,27 @@
     <div class="team-details">
       <h2>Team Details</h2>
       <div class="t-d-box">
-        <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/" target="_blank">Visit Website</a></div><br>
-        <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/roster" target="_blank">View Roster</a></div><br>
-        <mat-divider [inset]="true"></mat-divider>
-        <div class="team-standings">
+        <div class="team-buttons">
+            <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/" target="_blank">Visit Website</a></div><br>
+            <div><a mat-raised-button color="accent" href="https://dragons.overwatchleague.cn/en-us/roster" target="_blank">View Roster</a></div>
+        </div>
+        <br>
+        <div class="team-standings1">
           <h4><i>Stage Standings</i></h4>
           <p><b>Ranking: 12</b></p>
           <p>0W-6L</p>
-          <mat-divider [inset]="true"></mat-divider>
+        </div>
+        <br>
+        <div class="team-standings2">
           <h4><i>Season Standings</i></h4>
           <p><b>Ranking: {{ myTeam.standing }}</b></p>
           <p>0W-26L</p>
+        </div>
+        <div class="next-match">
+          <h4><i>Next Match</i></h4>
+          <h5>Boston Uprising</h5>
+          <p>26/04/2018</p>
+          <p>Time Remaining: {{ days }} days, {{ hours }} hours, {{ minutes }} minutes</p>
         </div>
       </div>
     </div>

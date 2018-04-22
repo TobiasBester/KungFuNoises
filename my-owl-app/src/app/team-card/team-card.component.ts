@@ -15,6 +15,13 @@ export class TeamCardComponent implements OnInit {
   latestTeam = TEAMS.BOSTON_UPRISING;
   showSpoiler = false;
 
+  currentDate = new Date();
+  matchDate = new Date('Apr 24, 2018 02:00:00');
+  diff = new Date(this.matchDate.getTime() - this.currentDate.getTime());
+  days = this.diff.getDay();
+  hours = this.diff.getHours();
+  minutes = this.diff.getMinutes();
+
   constructor() { }
 
   ngOnInit() {

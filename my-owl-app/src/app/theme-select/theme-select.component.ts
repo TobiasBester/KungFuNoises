@@ -10,7 +10,7 @@ import { TEAMS_LIST } from '../shared/mock_data/teams.mock';
 })
 export class ThemeSelectComponent implements OnInit {
   teams = TEAMS_LIST;
-  selected = 'default-theme';
+  selected = 'sd-theme';
   @Output() chosenTheme = new EventEmitter<any>();
 
   constructor() {}

@@ -1,0 +1,9 @@
+$fm-theme-primary: mat-palette($mat-yellow, 600);
+$fm-theme-accent: mat-palette($mat-red, 900);
+$fm-theme-warn: mat-palette($mat-red);
+
+$fm-theme: mat-light-theme(
+    $fm-theme-primary,
+    $fm-theme-accent,
+    $fm-theme-warn
+)

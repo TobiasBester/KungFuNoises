@@ -1,0 +1,9 @@
+$la-glad-theme-primary: mat-palette($mat-purple, 900);
+$la-glad-theme-accent: mat-palette($mat-grey, 900);
+$la-glad-theme-warn: mat-palette($mat-red);
+
+$la-glad-theme: mat-light-theme(
+    $la-glad-theme-primary,
+    $la-glad-theme-accent,
+    $la-glad-theme-warn
+)

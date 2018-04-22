@@ -1,0 +1,9 @@
+$la-val-theme-primary: mat-palette($mat-light-green, 800);
+$la-val-theme-accent: mat-palette($mat-yellow, A400);
+$la-val-theme-warn: mat-palette($mat-red);
+
+$la-val-theme: mat-light-theme(
+    $la-val-theme-primary,
+    $la-val-theme-accent,
+    $la-val-theme-warn
+)

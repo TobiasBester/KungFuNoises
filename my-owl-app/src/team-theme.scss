@@ -8,6 +8,12 @@
 @import './themes/pf-theme.scss';
 @import './themes/ny-theme.scss';
 @import './themes/sd-theme.scss';
+@import './themes/fm-theme.scss';
+@import './themes/ls-theme.scss';
+@import './themes/la-glad-theme.scss';
+@import './themes/la-val-theme.scss';
+@import './themes/ss-theme.scss';
+@import './themes/sdyn-theme.scss';
 
 .default-theme{
     @include angular-material-theme($default-theme);
@@ -35,4 +41,28 @@
 
 .sd-theme{
     @include angular-material-theme($sd-theme);
+}
+
+.fm-theme{
+  @include angular-material-theme($fm-theme);
+}
+
+.ls-theme{
+  @include angular-material-theme($ls-theme);
+}
+
+.la-glad-theme{
+  @include angular-material-theme($la-glad-theme);
+}
+
+.la-val-theme{
+  @include angular-material-theme($la-val-theme);
+}
+
+.ss-theme{
+  @include angular-material-theme($ss-theme);
+}
+
+.sdyn-theme{
+  @include angular-material-theme($sdyn-theme);
 }

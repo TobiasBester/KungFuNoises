@@ -1,0 +1,9 @@
+$ss-theme-primary: mat-palette($mat-deep-orange, 600);
+$ss-theme-accent: mat-palette($mat-orange, A200);
+$ss-theme-warn: mat-palette($mat-red);
+
+$ss-theme: mat-light-theme(
+    $ss-theme-primary,
+    $ss-theme-accent,
+    $ss-theme-warn
+)

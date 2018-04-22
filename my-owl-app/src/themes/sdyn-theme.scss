@@ -1,0 +1,9 @@
+$sdyn-theme-primary: mat-palette($mat-grey, 900);
+$sdyn-theme-accent: mat-palette($mat-amber, A400);
+$sdyn-theme-warn: mat-palette($mat-red);
+
+$sdyn-theme: mat-light-theme(
+    $sdyn-theme-primary,
+    $sdyn-theme-accent,
+    $sdyn-theme-warn
+)

@@ -1,0 +1,9 @@
+$ls-theme-primary: mat-palette($mat-orange, 700);
+$ls-theme-accent: mat-palette($mat-light-blue, 300);
+$ls-theme-warn: mat-palette($mat-red);
+
+$ls-theme: mat-light-theme(
+    $ls-theme-primary,
+    $ls-theme-accent,
+    $ls-theme-warn
+)

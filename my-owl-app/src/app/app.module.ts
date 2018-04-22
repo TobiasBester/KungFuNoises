@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment.prod';
 import { UserHeroDialogComponent } from './dialogs/user-hero-dialog/user-hero-dialog.component';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
@@ -55,7 +57,8 @@ import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
     ReactiveFormsModule,
     MaterialModule,
     AppRoutingModule,
-    OverlayModule
+    OverlayModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [TeamModalService, PlayerModalService],
   bootstrap: [AppComponent]

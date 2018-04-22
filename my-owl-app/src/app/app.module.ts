@@ -29,6 +29,7 @@ import { ClipsCardComponent } from './clips-card/clips-card.component';
 import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroListService } from './hero-list.service';
+import { PlayerPageComponent } from './player-page/player-page.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { HeroListService } from './hero-list.service';
     MyowCardComponent,
     ClipsCardComponent,
     ClipsDialogComponent,
-    HeroListComponent
+    HeroListComponent,
+    PlayerPageComponent
   ],
   entryComponents: [
     TeamModalComponent,

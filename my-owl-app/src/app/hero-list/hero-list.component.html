@@ -1,11 +1,70 @@
+<div fxLayout="column">
+  <div fxFlex="100%">
+    <h2 class="mat-h2">Best Heroes:</h2>
+  </div>
+</div>
 <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px" fxFlexFill>
-  <!-- <div fxFlex="30%">
-    <img class="hero-logo mat-elevation-z8" src="{{ heroes.ANA. }}" alt="{{ player.alias }}">
+  <div fxFlex="30%">
+    <mat-card>
+        <div fxLayout="column">
+          <div fxFlex="30%">
+            <img class="hero-logo" src="{{ hero_1.imageLocation }}" alt="{{ hero_1.name }}">
+          </div>
+          <div fxFlex="20%">
+            <h3 class="mat-h3" style="margin: 0%">{{ hero_1.name }}</h3>
+          </div>
+          <div fxFlex="20%">
+              <h3 class="mat-caption" style="margin: 0%">{{ this.role_1 }}</h3>
+          </div>
+          <div fxFlex="20%">
+              <h3 class="mat-caption" style="margin: 0%">4231 Hours</h3>
+          </div>
+          <div fxFlex="10%">
+              <h3 class="mat-caption">2300 Wins</h3>
+          </div>
+        </div>
+    </mat-card>
   </div>
   <div fxFlex="30%">
-    <img class="hero-logo mat-elevation-z8" src="{{ player.imageLocation }}" alt="{{ player.alias }}">
+      <mat-card>
+          <div fxLayout="column">
+            <div fxFlex="30%">
+              <img class="hero-logo" src="{{ hero_2.imageLocation }}" alt="{{ hero_2.name }}">
+            </div>
+            <div fxFlex="20%">
+              <h3 class="mat-h3" style="margin: 0%">{{ hero_2.name }}</h3>
+            </div>
+            <div fxFlex="20%">
+                <h3 class="mat-caption" style="margin: 0%">{{ this.role_2 }}</h3>
+            </div>
+            <div fxFlex="20%">
+                <h3 class="mat-caption" style="margin: 0%">3400 Hours</h3>
+            </div>
+            <div fxFlex="10%">
+                <h3 class="mat-caption">1200 Wins</h3>
+            </div>
+          </div>
+      </mat-card>
   </div>
   <div fxFlex="30%">
-    <img class="hero-logo mat-elevation-z8" src="{{ player.imageLocation }}" alt="{{ player.alias }}">
-  </div> -->
+      <mat-card>
+          <div fxLayout="column">
+            <div fxFlex="30%">
+              <img class="hero-logo" src="{{ hero_3.imageLocation }}" alt="{{ hero_3.name }}">
+            </div>
+            <div fxFlex="20%">
+              <h3 class="mat-h3" style="margin: 0%">{{ hero_3.name }}</h3>
+            </div>
+            <div fxFlex="20%">
+                <h3 class="mat-caption" style="margin: 0%">{{ this.role_3 }}</h3>
+            </div>
+            <div fxFlex="20%">
+                <h3 class="mat-caption" style="margin: 0%">3201 Hours</h3>
+            </div>
+            <div fxFlex="10%">
+                <h3 class="mat-caption">1500 Wins</h3>
+            </div>
+          </div>
+      </mat-card>
+  </div>
 </div>

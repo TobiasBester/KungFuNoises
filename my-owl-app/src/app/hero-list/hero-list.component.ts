@@ -5,6 +5,7 @@ import { Hero } from './../shared/models/hero.model';
 import { HEROES, HEROES_LIST } from './../shared/mock_data/heroes.mock';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Role } from './../shared/enums/role.enum';
 
 @Component({
   selector: 'app-hero-list',
@@ -13,7 +14,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeroListComponent implements OnInit {
   // heroResponse: HeroResponse;
-  heroes = HEROES_LIST;
+  hero_1 = HEROES.DOOMFIST;
+  role_1 = Role[this.hero_1.role];
+  hero_2 = HEROES.GENJI;
+  role_2 = Role[this.hero_2.role];
+  hero_3 = HEROES.HANZO;
+  role_3 = Role[this.hero_3.role];
   // hero1 = heroes.;
   constructor(private http: HttpClient) { }
 

@@ -1,0 +1,268 @@
+<mat-card [ngStyle]="dynamicStyles()">
+  <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center">
+    <div fxFlex="30%" style="text-align: left">
+      <img src="{{ player.imageLocation }}" class="logo" height="300px">
+    </div>
+    <div fxFlex="30%" style="text-align: center">
+      <h1 class="mat-display-3"> {{ player.firstName }} "{{ player.alias }}" {{ player.lastName }}</h1>
+      <h1 class="mat-display-2"> {{ player.team.name }} {{ this.role }} </h1>
+    </div>
+    <div fxFlex="30%" style="text-align: right">
+      <img src="{{ player.team.logoLocation }}" class="logo" height="300px">
+    </div>
+  </div>
+</mat-card>
+<mat-card>
+  <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+    <div fxFlex="30%">
+      <mat-card>
+        <mat-card-title>
+          Details
+        </mat-card-title>
+        <mat-card-content>
+          <p class="mat-body-2">
+            <b>Full Name: </b>{{ player.firstName }} {{ player.lastName}}
+            <br>
+            <b>Age: </b>23
+            <br>
+            <b>Alias: </b>{{ player.alias }}
+            <br>
+            <b>Role: </b>{{ this.role }}
+            <br>
+            <b>Team: </b>{{ player.team.name }}
+            <br>
+            <b>Origin: </b> {{ player.homeTown }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxFlex="30%">
+      <mat-card>
+        <mat-card-title>
+          Best Heroes
+        </mat-card-title>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutGap="5px">
+            <div fxFlex="30%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="40%">
+                    <img class="hero-logo" src="{{ hero_1.imageLocation }}" alt="{{ hero_1.name }}">
+                  </div>
+                  <div fxFlex="50%">
+                    <h1 class="mat-h1">{{ hero_1.name }}</h1>
+                    <p class="mat-body-2">
+                      <b>Role: </b>{{ role_1 }}
+                      <br>
+                      <b>Total Time Played: </b>4231 Hours
+                      <br>
+                      <b>Eliminations: </b>34 000
+                      <br>
+                      <b>Wins: </b>2 300 Wins
+                      <br>
+                      <b>Losses: </b>1 150 Losses
+                      <br>
+                      <b>W/L Ratio: </b>2:1
+                    </p>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="30%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="40%">
+                    <img class="hero-logo" src="{{ hero_2.imageLocation }}" alt="{{ hero_2.name }}">
+                  </div>
+                  <div fxFlex="50%">
+                    <h1 class="mat-h1">{{ hero_2.name }}</h1>
+                    <p class="mat-body-2">
+                      <b>Role: </b>{{ role_2 }}
+                      <br>
+                      <b>Total Time Played: </b>3400 Hours
+                      <br>
+                      <b>Eliminations: </b>22 000
+                      <br>
+                      <b>Wins: </b>2 300 Wins
+                      <br>
+                      <b>Losses: </b>1 150 Losses
+                      <br>
+                      <b>W/L Ratio: </b>2:1
+                    </p>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="30%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="40%">
+                    <img class="hero-logo" src="{{ hero_3.imageLocation }}" alt="{{ hero_3.name }}">
+                  </div>
+                  <div fxFlex="50%">
+                    <h1 class="mat-h1">{{ hero_3.name }}</h1>
+                    <p class="mat-body-2">
+                      <b>Role: </b>{{ role_3 }}
+                      <br>
+                      <b>Total Time Played: </b>3400 Hours
+                      <br>
+                      <b>Eliminations: </b>22 000
+                      <br>
+                      <b>Wins: </b>2 300 Wins
+                      <br>
+                      <b>Losses: </b>1 150 Losses
+                      <br>
+                      <b>W/L Ratio: </b>2:1
+                    </p>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxFlex="30%">
+      <mat-card>
+        <mat-card-title>
+          Recent Matches
+        </mat-card-title>
+        <mat-card-content>
+          <div fxLayout="column wrap" fxLayoutAlign="center" fxLayoutGap="5px">
+            <div fxFlex="15%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="30%" style="text-align: left">
+                    <img src="../assets/images/team_logo/shanghai_dragons.svg" class="team-logo">
+                    <img src="../assets/images/team_logo/boston_uprising.svg" class="team-logo">
+                  </div>
+                  <div fxFlex="30%" style="text-align: center">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Shanghai Dragons</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">vs</h1>
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Boston Uprising</b>
+                    </h1>
+                  </div>
+                  <div fxFlex="30%" style="text-align: right">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Result</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">4:3</h1>
+                    <h1 class="mat-h3" style="margin: 0%; color: green">Victory</h1>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="15%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="30%" style="text-align: left">
+                    <img src="../assets/images/team_logo/shanghai_dragons.svg" class="team-logo">
+                    <img src="../assets/images/team_logo/la_valiant.svg" class="team-logo">
+                  </div>
+                  <div fxFlex="30%" style="text-align: center">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Shanghai Dragons</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">vs</h1>
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>LA Valiant</b>
+                    </h1>
+                  </div>
+                  <div fxFlex="30%" style="text-align: right">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Result</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">3:2</h1>
+                    <h1 class="mat-h3" style="margin: 0%; color: green">Victory</h1>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="15%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="30%" style="text-align: left">
+                    <img src="../assets/images/team_logo/shanghai_dragons.svg" class="team-logo">
+                    <img src="../assets/images/team_logo/boston_uprising.svg" class="team-logo">
+                  </div>
+                  <div fxFlex="30%" style="text-align: center">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Shanhai Dragons</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">vs</h1>
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Boston Uprising</b>
+                    </h1>
+                  </div>
+                  <div fxFlex="30%" style="text-align: right">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Result</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">4:3</h1>
+                    <h1 class="mat-h3" style="margin: 0%; color: green">Victory</h1>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="15%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="30%" style="text-align: left">
+                    <img src="../assets/images/team_logo/shanghai_dragons.svg" class="team-logo">
+                    <img src="../assets/images/team_logo/boston_uprising.svg" class="team-logo">
+                  </div>
+                  <div fxFlex="30%" style="text-align: center">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Shanhai Dragons</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">vs</h1>
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Boston Uprising</b>
+                    </h1>
+                  </div>
+                  <div fxFlex="30%" style="text-align: right">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Result</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">4:3</h1>
+                    <h1 class="mat-h3" style="margin: 0%; color: green">Victory</h1>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+            <div fxFlex="15%">
+              <mat-card>
+                <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+                  <div fxFlex="30%" style="text-align: left">
+                    <img src="../assets/images/team_logo/shanghai_dragons.svg" class="team-logo">
+                    <img src="../assets/images/team_logo/boston_uprising.svg" class="team-logo">
+                  </div>
+                  <div fxFlex="30%" style="text-align: center">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Shanhai Dragons</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">vs</h1>
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Boston Uprising</b>
+                    </h1>
+                  </div>
+                  <div fxFlex="30%" style="text-align: right">
+                    <h1 class="mat-h3" style="margin: 0%">
+                      <b>Result</b>
+                    </h1>
+                    <h1 class="mat-h3" style="margin: 0%">4:3</h1>
+                    <h1 class="mat-h3" style="margin: 0%; color: green">Victory</h1>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</mat-card>

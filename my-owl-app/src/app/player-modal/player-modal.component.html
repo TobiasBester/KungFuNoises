@@ -1,20 +1,44 @@
 <mat-dialog-content>
-  <h2 class="mat-h2">{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
-  <mat-grid-list cols="2" rowHeight="1:1">
-    <mat-grid-tile>
-      <img src="{{ player.imageLocation }}" alt="{{ player.alias }}" width="250px" height="250px">
-    </mat-grid-tile>
-    <mat-grid-tile>
+  <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center">
+    <div fxFlex="100%">
       <h2 class="mat-h2">{{ player.firstName }} "{{ player.alias }}" {{ player.lastName}}</h2>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="2">
-      <div class="container">
-          <h3 class="mat-h3">Role: {{ this.role }} </h3>
-          <h3 class="mat-h3">Team: {{ player.team.name }} </h3>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px" fxFlexFill>
+    <div fxFlex="40%">
+      <img class="player-logo mat-elevation-z8" src="{{ player.imageLocation }}" alt="{{ player.alias }}">
+    </div>
+    <div fxFlex="50%">
+      <div fxLayout="column">
+        <div fxFlex="20%">
+          <h2 class="mat-h2">Quick Facts:</h2>
+        </div>
+        <div fxFlex="20%">
+            <h3 class="mat-h3"><b>Alias: </b>{{ player.alias }}</h3>
+        </div>
+        <div fxFlex="20%">
+            <h3 class="mat-h3"><b>Full Name: </b>{{ player.firstName }} {{ player.lastName}}</h3>
+        </div>
+        <div fxFlex="20%">
+            <h3 class="mat-h3"><b>Team: </b>{{ player.team.name }}</h3>
+        </div>
+        <div fxFlex="20%">
+            <h3 class="mat-h3"><b>Role: </b>{{ this.role }}</h3>
+        </div>
       </div>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <mat-divider></mat-divider>
+    </div>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="center stretch">
+      <h1 class="mat-h1">Juicy Details:</h1>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="center">
+    <div fxFlex="50%">
+      <h3 class="mat-h3">Role: {{ this.role }} </h3>
+    </div>
+    <div fxFlex="50%">
+      <h3 class="mat-h3">Team: {{ player.team.name }} </h3>
+    </div>
+  </div>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>

@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +27,8 @@ import { NewsCardComponent } from './news-card/news-card.component';
 import { MyowCardComponent } from './myow-card/myow-card.component';
 import { ClipsCardComponent } from './clips-card/clips-card.component';
 import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
+import { HeroListService } from './hero-list.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,8 @@ import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
     NewsCardComponent,
     MyowCardComponent,
     ClipsCardComponent,
-    ClipsDialogComponent
+    ClipsDialogComponent,
+    HeroListComponent
   ],
   entryComponents: [
     TeamModalComponent,
@@ -58,9 +63,11 @@ import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
     MaterialModule,
     AppRoutingModule,
     OverlayModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [TeamModalService, PlayerModalService],
+  providers: [TeamModalService, PlayerModalService, HeroListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

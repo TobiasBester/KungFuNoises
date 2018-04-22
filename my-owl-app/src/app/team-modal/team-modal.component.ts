@@ -9,7 +9,7 @@ import { TEAMS_LIST } from '../shared/mock_data/teams.mock';
   styleUrls: ['./team-modal.component.css']
 })
 export class TeamModalComponent implements OnInit {
-
+  teams = TEAMS_LIST;
   teams_1 = TEAMS_LIST.slice(0, 3);
   teams_2 = TEAMS_LIST.slice(4, 7);
   teams_3 = TEAMS_LIST.slice(8, 11);

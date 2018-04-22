@@ -24,6 +24,8 @@ export class TeamCardComponent implements OnInit {
 
   constructor() { }
 
+  // {"publicKey":"","privateKey":"rmuwX-bKJlXZCiGYGc3YxNDk9XT7dQlJzs5ati6pVgw"}
+
   ngOnInit() {
   }
 

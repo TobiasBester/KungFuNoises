@@ -15,6 +15,40 @@
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Cancel</button>
-  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
-  <button mat-button [mat-dialog-close]="true">Confirm</button>
+<!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+<button mat-button [mat-dialog-close]="true">Confirm</button>
 </mat-dialog-actions>
+
+<!-- <h2 mat-dialog-title>Select a Team</h2>
+<mat-dialog-content>
+  <mat-button-toggle-group>
+    <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+      <ng-container *ngFor="let team of teams_1">
+        <div fxFlex="20%" style="text-align: center" [ngStyle]="dynamicStyles(team)">
+          <img src="{{ team.logoLocation }}" alt="logo" class="team-logo">
+        </div>
+      </ng-container>
+    </div>
+    <div style="height: 10px;"></div>
+    <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+      <ng-container *ngFor="let team of teams_2">
+        <div fxFlex="20%" style="text-align: center" [ngStyle]="dynamicStyles(team)">
+          <img src="{{ team.logoLocation }}" alt="logo" class="team-logo">
+        </div>
+      </ng-container>
+    </div>
+    <div style="height: 10px;"></div>
+    <div fxLayout="row wrap" fxLayout.sm="column wrap" fxLayout.xs="column wrap" fxLayoutAlign="center" fxLayoutGap="10px">
+      <ng-container *ngFor="let team of teams_3">
+        <div fxFlex="20%" style="text-align: center" [ngStyle]="dynamicStyles(team)">
+          <img src="{{ team.logoLocation }}" alt="logo" class="team-logo">
+        </div>
+      </ng-container>
+    </div>
+  </mat-button-toggle-group>
+</mat-dialog-content>
+<mat-dialog-actions> -->
+  <button mat-button mat-dialog-close>Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <!-- <button mat-button [mat-dialog-close]="true">Confirm</button>
+</mat-dialog-actions> -->

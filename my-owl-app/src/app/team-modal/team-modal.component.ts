@@ -10,7 +10,9 @@ import { TEAMS_LIST } from '../shared/mock_data/teams.mock';
 })
 export class TeamModalComponent implements OnInit {
 
-  teams = TEAMS_LIST;
+  teams_1 = TEAMS_LIST.slice(0, 3);
+  teams_2 = TEAMS_LIST.slice(4, 7);
+  teams_3 = TEAMS_LIST.slice(8, 11);
 
   constructor(public dialogRef: MatDialogRef<TeamModalComponent>) { }
 
@@ -23,9 +25,9 @@ export class TeamModalComponent implements OnInit {
       'background-size' : 'contain',
       'background-position' : 'centre',
       'color' : 'azure',
-      'width' : '200px',
-      'height' : '80px',
-      'margin' : '10px'
+      'width' : '400px',
+      'height' : '160px',
+      'margin' : '0px'
     };
   }
 }

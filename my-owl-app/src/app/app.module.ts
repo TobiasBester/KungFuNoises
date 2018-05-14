@@ -30,6 +30,7 @@ import { ClipsDialogComponent } from './clips-dialog/clips-dialog.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroListService } from './hero-list.service';
 import { PlayerPageComponent } from './player-page/player-page.component';
+import { PlayerLinkComponent } from './player-link/player-link.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { PlayerPageComponent } from './player-page/player-page.component';
     ClipsCardComponent,
     ClipsDialogComponent,
     HeroListComponent,
-    PlayerPageComponent
+    PlayerPageComponent,
+    HeroLinkComponent
   ],
   entryComponents: [
     TeamModalComponent,

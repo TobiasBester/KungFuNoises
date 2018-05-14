@@ -5,6 +5,7 @@ import { Role } from './../shared/enums/role.enum';
 import { PLAYERS } from './../shared/mock_data/players.mock';
 import { Player } from './../shared/models/player.model';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-player-page',
@@ -12,6 +13,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player-page.component.css']
 })
 export class PlayerPageComponent implements OnInit {
+  alias: String;
+  private sub: any;
+
   player: Player;
   role: String;
   hero_1 = HEROES.DOOMFIST;
@@ -25,12 +29,18 @@ export class PlayerPageComponent implements OnInit {
   team_3 = TEAMS.LOS_ANGELES_GLADIATORS;
   team_4 = TEAMS.NEW_YORK_EXCELSIOR;
   team_5 = TEAMS.SEOUL_DYNASTY;
-  constructor() {
-    this.player = PLAYERS.find(_player => _player.alias === 'Ado');
-    this.role = Role[this.player.role];
+  constructor(private route: ActivatedRoute) {
+    //this.player = PLAYERS.find(_player => _player.alias === 'Ado');
+    //this.role = Role[this.player.role];
   }
 
   ngOnInit() {
+    this.sub = this.route.params.subscribe(params => {
+      this.alias = params['alias']; // (+) converts string 'id' to a number
+
+      this.player = PLAYERS.find(_player => _player.alias === this.alias);
+      this.role = Role[this.player.role];
+   });
   }
 
   // 'width' : '200px',

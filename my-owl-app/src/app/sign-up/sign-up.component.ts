@@ -12,6 +12,10 @@ export class SignUpComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
+  fName: String = '';
+  lName: String = '';
+  bTag: String = '';
+
   constructor(private _formBuilder: FormBuilder, public teamModalService: TeamModalService) { }
 
   ngOnInit() {

@@ -12,13 +12,13 @@
           <form [formGroup]="firstFormGroup">
             <ng-template matStepLabel>Fill out your details</ng-template>
             <mat-form-field>
-              <input matInput placeholder="First Name" formControlName="firstCtrl" required>
+              <input matInput placeholder="First Name" formControlName="firstCtrl" [(ngModel)]="this.fName" required>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Last Name" formControlName="firstCtrl" required>
+              <input matInput placeholder="Last Name" formControlName="firstCtrl" [(ngModel)]="this.lName" required>
             </mat-form-field>
             <mat-form-field>
-              <input matInput placeholder="Battletag" formControlName="firstCtrl" required>
+              <input matInput placeholder="Battletag" formControlName="firstCtrl" [(ngModel)]="this.bTag" required>
             </mat-form-field>
             <div>
               <button mat-button matStepperNext>Next</button>
@@ -31,15 +31,7 @@
             <button mat-raised-button (click)="this.teamModalService.openDialog()">Select a Team!</button>
             <mat-form-field hideRequiredMarker>
               <input matInput placeholder="Team" formControlName="secondCtrl" value="{{this.teamModalService.selectedTeam}}" readonly>
-              <!-- <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button> -->
             </mat-form-field>
-            <!-- <mat-form-field>
-              <input matInput placeholder="Address" formControlName="secondCtrl" required>
-              <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
-            </mat-form-field>
-            <mat-form-field>
-              <button mat-raised-button (click)="this.teamModalService.openDialog()">Team Modal Button</button>
-            </mat-form-field> -->
             <div>
               <button mat-button matStepperPrevious>Back</button>
               <button mat-button matStepperNext>Next</button>
@@ -48,7 +40,10 @@
         </mat-step>
         <mat-step>
           <ng-template matStepLabel>Done</ng-template>
-          You are now done.
+          <h1 class="mat-headline">Confirm your details below:</h1>
+          <h2 class="mat-subheading-2">Name: <b>{{ this.fName }} {{ this.lName }}</b></h2>
+          <h2 class="mat-subheading-2">Battletag: <b>{{ this.bTag }}</b></h2>
+          <h2 class="mat-subheading-2">Team: <b>{{ this.teamModalService.selectedTeam }}</b></h2>
           <div>
             <button mat-button matStepperPrevious>Back</button>
             <button mat-button (click)="stepper.reset()">Reset</button>

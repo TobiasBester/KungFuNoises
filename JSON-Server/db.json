@@ -5,28 +5,32 @@
       "first_name": "Mark",
       "last_name": "Coetzer",
       "battle_tag": "AngelusTacit",
-      "battle_hash": "2784"
+      "battle_hash": "2784",
+      "team": "Boston Uprising"
     },
     {
       "id": 2,
       "first_name": "Tobias",
       "last_name": "Bester",
       "battle_tag": "R2D2Soon",
-      "battle_hash": "2784"
+      "battle_hash": "2784",
+      "team": "Boston Uprising"
     },
     {
       "id": 3,
       "first_name": "Warwick",
       "last_name": "Sales",
       "battle_tag": "Aera",
-      "battle_hash": "2784"
+      "battle_hash": "2784",
+      "team": "Boston Uprising"
     },
     {
       "first_name": "Test",
       "last_name": "Test",
       "battle_tag": "Aera",
       "battle_hash": "2784",
-      "id": 4
+      "id": 4,
+      "team": "Boston Uprising"
     }
   ]
 }

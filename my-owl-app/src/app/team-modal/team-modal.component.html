@@ -1,10 +1,10 @@
 <h2 mat-dialog-title>Select a Team</h2>
 <mat-dialog-content>
-  <mat-button-toggle-group style="display: block">
+  <mat-button-toggle-group style="display: block" #group="matButtonToggleGroup">
     <mat-grid-list cols="4" rowHeight="200px">
       <ng-container *ngFor="let team of teams">
         <mat-grid-tile>
-          <mat-button-toggle [ngStyle]="dynamicStyles(team)">
+          <mat-button-toggle [ngStyle]="dynamicStyles(team)" value="{{ team.name }}">
             <img src="{{ team.logoLocation }}" alt="logo" width="50px" height="50px">
             <h5 style="margin: 0;">{{team.name}}</h5>
           </mat-button-toggle>
@@ -16,7 +16,9 @@
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Cancel</button>
 <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
-<button mat-button [mat-dialog-close]="true">Confirm</button>
+  <button mat-button [mat-dialog-close]="group.value">Confirm</button>
+  <span class="fill-remaining-space"></span>
+  <h4 class="mat-subheading-2">Selected Team: <b>{{group.value}}</b> </h4>
 </mat-dialog-actions>
 
 <!-- <h2 mat-dialog-title>Select a Team</h2>
@@ -48,7 +50,7 @@
   </mat-button-toggle-group>
 </mat-dialog-content>
 <mat-dialog-actions> -->
-  <button mat-button mat-dialog-close>Cancel</button>
+  <!-- <button mat-button mat-dialog-close>Cancel</button> -->
   <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
   <!-- <button mat-button [mat-dialog-close]="true">Confirm</button>
 </mat-dialog-actions> -->

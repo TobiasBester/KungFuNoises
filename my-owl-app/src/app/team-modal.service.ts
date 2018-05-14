@@ -4,8 +4,11 @@ import { MatDialog, MatDialogRef } from '@angular/material';
 
 @Injectable()
 export class TeamModalService {
+  selectedTeam: String;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+    this.selectedTeam = 'No Team';
+  }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(TeamModalComponent, {
@@ -13,7 +16,12 @@ export class TeamModalService {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      console.log('The dialog result: ' + result);
+      this.selectedTeam = result;
     });
+  }
+
+  getTeam(): String {
+    return this.selectedTeam;
   }
 }

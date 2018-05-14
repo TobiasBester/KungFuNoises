@@ -19,7 +19,7 @@ export class SignUpComponent implements OnInit {
       firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      // secondCtrl: ['', Validators.required]
     });
   }
 

@@ -97,7 +97,7 @@ export const PLAYERS: Player[] = [
   { alias: 'Nomy', firstName: 'David', lastName: 'Lizarraga Ramirez Osmar', homeTown: 'Tijuana, MX', team: TEAMS.SAN_FRANCISCO_SHOCK, role: Role.TANK, imageLocation: '../assets/images/players/nomy.png'  },
   { alias: 'NotE', firstName: 'Lucas', lastName: 'Meissner', homeTown: 'Barrie, CA', team: TEAMS.BOSTON_UPRISING, role: Role.TANK, imageLocation: '../assets/images/players/note.png'  },
   { alias: 'Numlocked', firstName: 'Sebastian', lastName: 'Barton', homeTown: 'Leamington Spa, GB', team: TEAMS.LOS_ANGELES_VALIANT, role: Role.TANK, imageLocation: '../assets/images/players/numlocked.png'  },
-  { alias: 'NUS', firstName: 'Jong-Seok', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT, imageLocation: '../assets/images/players/numlocked.png'  },
+  { alias: 'NUS', firstName: 'Jong-Seok', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.LONDON_SPITFIRE, role: Role.SUPPORT, imageLocation: '../assets/images/players/nus.png'  },
   { alias: 'OGE', firstName: 'Minseok', lastName: 'Son', homeTown: 'KR', team: TEAMS.DALLAS_FUEL, role: Role.TANK, imageLocation: '../assets/images/players/oge.png'  },
   { alias: 'Pine', firstName: 'Do-Hyeon', lastName: 'Kim', homeTown: 'Seoul, KR', team: TEAMS.NEW_YORK_EXCELSIOR, role: Role.FLEX, imageLocation: '../assets/images/players/pine.png'  },
   { alias: 'Poko', firstName: 'Gael', lastName: 'Gouzerch', homeTown: 'Nîmes, FR', team: TEAMS.PHILADELPHIA_FUSION, role: Role.FLEX, imageLocation: '../assets/images/players/poko.png'  },

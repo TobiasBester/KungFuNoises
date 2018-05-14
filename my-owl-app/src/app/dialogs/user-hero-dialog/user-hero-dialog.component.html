@@ -9,9 +9,9 @@
         <mat-card-title>Top Overwatch League {{ hero.name }} Players</mat-card-title>
         <mat-card-content>
           <ul>
-            <li><img src="{{ player1.imageLocation }}" class="player-img"><br>{{ player1.alias }}</li>
-            <li><img src="{{ player2.imageLocation }}" class="player-img"><br>{{ player2.alias }}</li>
-            <li><img src="{{ player3.imageLocation }}" class="player-img"><br>{{ player3.alias }}</li>
+            <li><img src="{{ player1.imageLocation }}" class="player-img"><br><app-player-link (click)="close()" name="{{player1.alias}}"></app-player-link></li>
+            <li><img src="{{ player2.imageLocation }}" class="player-img"><br><app-player-link (click)="close()" name="{{player2.alias}}"></app-player-link></li>
+            <li><img src="{{ player3.imageLocation }}" class="player-img"><br><app-player-link (click)="close()" name="{{player3.alias}}"></app-player-link></li>
           </ul>
         </mat-card-content>
       </mat-card>

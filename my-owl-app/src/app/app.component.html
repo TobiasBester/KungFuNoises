@@ -5,6 +5,10 @@
       <!-- <span class="navbar-title">MY OVERWATCH LEAGUE</span> -->
       <img src="../assets/images/my-owl-logo-text.svg" class="my-owl-logo">
       <img src="../assets/images/owl-logo.png" class="owl-logo">
+      <span class="fill-remaining-space"></span>
+      <div>
+        <app-theme-select (chosenTheme)="chosenTheme($event)"></app-theme-select>
+      </div>
     </mat-toolbar>
   </div>
 

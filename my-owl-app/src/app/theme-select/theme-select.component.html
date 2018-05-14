@@ -1,4 +1,4 @@
-<mat-form-field>
+<mat-form-field style="height: 50px;">
   <mat-select placeholder="Select a Theme" [(value)]="selected" (selectionChange)="toggle()">
     <mat-option value="default-theme">Default</mat-option>
     <mat-option *ngFor="let team of teams" [value]="team.theme">

@@ -21,7 +21,7 @@ body {
 
 .card-comparison {
     font-family: 'Exo 2',sans-serif;
-    background: #FF8900;
+    background: rgb(245, 160, 63);
 }
 
 .pro-guides {
@@ -30,7 +30,7 @@ body {
 
 .card-guides {
     font-family: 'Exo 2',sans-serif;
-    background: #FF8900;
+    background: rgb(245, 160, 63);
 }
 
 .pro-clips {
@@ -40,7 +40,7 @@ body {
 
 .card-clips {
     font-family: 'Exo 2',sans-serif;
-    background: #FF8900;
+    background: rgb(245, 160, 63);
 }
 
 .player-img {

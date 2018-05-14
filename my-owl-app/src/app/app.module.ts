@@ -51,7 +51,7 @@ import { PlayerLinkComponent } from './player-link/player-link.component';
     ClipsDialogComponent,
     HeroListComponent,
     PlayerPageComponent,
-    HeroLinkComponent
+    PlayerLinkComponent
   ],
   entryComponents: [
     TeamModalComponent,

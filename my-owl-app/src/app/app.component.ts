@@ -15,6 +15,10 @@ export class AppComponent implements OnInit {
   readonly VAPID_PUBLIC_KEY  = 'BMUiwBMCUPWRtNeuh6uLs8zVpQNOYCRl4JEvNA5TbMPdLBQ_aAdjirlxieQIelCHwhv2VOofvXMCFw13xINI5u8';
 
   title = 'My Overwatch League';
+  logoDark = '../assets/images/my-owl-logo-text.svg';
+  logoLight = '../assets/images/my-owl-logo-text-light.svg';
+  logoPath = this.logoDark;
+
   @HostBinding('class') componentCssClass;
   constructor(public overlayContainer: OverlayContainer,
               public teamModalService: TeamModalService,
@@ -26,6 +30,12 @@ export class AppComponent implements OnInit {
   onSetTheme(theme) {
     this.overlayContainer.getContainerElement().classList.add(theme);
     this.componentCssClass = theme;
+    console.log(theme);
+    if (theme.includes('df') || theme.includes('ho') || theme.includes('ny') || (theme.includes('sd') && !theme.includes('sdyn'))) {
+      this.logoPath = this.logoLight;
+    } else {
+      this.logoPath = this.logoDark;
+    }
   }
 
   chosenTheme(theme) {

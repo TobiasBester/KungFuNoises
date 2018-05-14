@@ -1,19 +1,21 @@
 @import '~@angular/material/theming';
 @include mat-core();
-
+// Light Themes
 @import './themes/default-theme.scss';
-@import './themes/df-theme.scss';
-@import './themes/ho-theme.scss';
 @import './themes/bu-theme.scss';
 @import './themes/pf-theme.scss';
-@import './themes/ny-theme.scss';
-@import './themes/sd-theme.scss';
 @import './themes/fm-theme.scss';
 @import './themes/ls-theme.scss';
 @import './themes/la-glad-theme.scss';
 @import './themes/la-val-theme.scss';
 @import './themes/ss-theme.scss';
 @import './themes/sdyn-theme.scss';
+
+// Dark Themes
+@import './themes/df-theme.scss';
+@import './themes/ho-theme.scss';
+@import './themes/ny-theme.scss';
+@import './themes/sd-theme.scss';
 
 .default-theme{
     @include angular-material-theme($default-theme);

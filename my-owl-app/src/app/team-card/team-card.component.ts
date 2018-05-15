@@ -16,7 +16,7 @@ export class TeamCardComponent implements OnInit {
   showSpoiler = false;
 
   currentDate = new Date();
-  matchDate = new Date('Apr 24, 2018 02:00:00');
+  matchDate = new Date('May 17, 2018 02:00:00');
   diff = new Date(this.matchDate.getTime() - this.currentDate.getTime());
   days = this.diff.getDay();
   hours = this.diff.getHours();

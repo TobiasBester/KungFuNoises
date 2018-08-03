@@ -7,6 +7,8 @@ public class Map {
   private int numRows = 0;
   private int numCols = 0;
   private ArrayList<Worker> workers = new ArrayList<Worker>();
+  private ArrayList<Mine> mines = new ArrayList<Mine>();
+  private ArrayList<Depot> depots = new ArrayList<Depot>();
 
   Map(ArrayList<String> mapArray, int worker_count) {
     this.numRows = mapArray.size();
@@ -23,9 +25,26 @@ public class Map {
   }
 
   private void createWorkers() {
+    System.out.println("Creating Workers");
     for (int i = 0; i < worker_count; i++) {
       Worker newWorker = new Worker(0, 0, this);
       workers.add(newWorker);
+    }
+  }
+
+  private void lookForResources() {
+    System.out.println("Looking for mines and depots");
+    for (int i = 0; i < this.numRows; i++) {
+      for (int j = 0; j < this.numCols; j++) {
+        if (Character.isUpperCase(theMap[i][j])) {
+          Mine newMine = new Mine(this, i, j, theMap[i][j]);
+          mines.add(newMine);
+        }
+        if (Character.isLowerCase(theMap[i][j])) {
+          Depot newDepot = new Depot(this, i, j, theMap[i][j]);
+          depots.add(newDepot);
+        }
+      }
     }
   }
 

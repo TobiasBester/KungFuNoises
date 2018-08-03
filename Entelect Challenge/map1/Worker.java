@@ -1,7 +1,7 @@
 public class Worker {
 
-  public int xLoc = 0;
-  public int yLoc = 0;
+  private int xLoc = 0;
+  private int yLoc = 0;
   public Boolean hasResource = false;
   public Boolean hasDeposited = false;
   private Map theMap;
@@ -15,8 +15,16 @@ public class Worker {
   public void StartWorking() {
     System.out.println("Started Working");
     while (hasResource == false) {
-      getResource();
+      // getResource();
     }
+  }
+
+  public int getXloc() {
+    return xLoc;
+  }
+
+  public int getYloc() {
+    return yLoc;
   }
 
 }

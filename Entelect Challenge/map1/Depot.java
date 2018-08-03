@@ -5,24 +5,29 @@ public class Depot {
   private Map theMap;
   private Character letter;
   public boolean receivedResource = false;
+  private Mine matchingMine = null;
 
   Depot(Map theMap, int xLoc, int yLoc, Character letter) {
     // System.out.println("Found a depot at " + xLoc + "," + yLoc);
     this.theMap = theMap;
-    this.letter = letter;
+    this.letter = Character.toUpperCase(letter);
     this.xLoc = xLoc;
     this.yLoc = yLoc;
   }
 
-  int getXLoc() {
+  public void setMine(Mine matchingMine) {
+    this.matchingMine = matchingMine;
+  }
+
+  public int getXloc() {
     return xLoc;
   }
 
-  int getYLoc() {
+  public int getYloc() {
     return yLoc;
   }
 
-  Character getLetter() {
+  public Character getLetter() {
     return letter;
   }
 

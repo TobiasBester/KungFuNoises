@@ -5,6 +5,7 @@ public class Mine {
   private Map theMap;
   private Character letter;
   public boolean pickedUp = false;
+  private Depot matchingDepot = null;
 
   Mine(Map theMap, int xLoc, int yLoc, Character letter) {
     // System.out.println("Found a mine at " + xLoc + "," + yLoc);
@@ -14,15 +15,19 @@ public class Mine {
     this.yLoc = yLoc;
   }
 
-  int getXLoc() {
+  public void setDepot(Depot matchingDepot) {
+    this.matchingDepot = matchingDepot;
+  }
+
+  public int getXloc() {
     return xLoc;
   }
 
-  int getYLoc() {
+  public int getYloc() {
     return yLoc;
   }
 
-  Character getLetter() {
+  public Character getLetter() {
     return letter;
   }
 
